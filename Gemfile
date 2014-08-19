@@ -41,3 +41,4 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 gem 'yt', '~> 0.10.2'
+gem 'pry-rails', :group => :development
