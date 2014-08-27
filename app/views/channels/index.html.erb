@@ -1,16 +1,8 @@
 <h2>List of channels</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @channels.each do |channel| %>
-      <tr>
-        <th><%= channel.title %></th>
-        <th><%= link_to 'Show', channel %></th>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<ul class='list-group'>
+  <% @channels.each do |channel| %>
+  <li class='list-group-item'>
+      <%= link_to channel.title, channel %>
+  </li>
+  <% end %>
+</ul>
