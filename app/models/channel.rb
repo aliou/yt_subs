@@ -6,7 +6,7 @@ class Channel < ActiveRecord::Base
 
   before_validation :fetch_title, on: :create
 
-  protected
+  private
   def fetch_title
     unless self.url.nil?
       begin
