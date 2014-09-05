@@ -6,6 +6,8 @@ class Channel < ActiveRecord::Base
 
   before_validation :fetch_title, on: :create
 
+  has_many :videos
+
   private
 
   # Private: Fetches the channel title from the YouTube API.

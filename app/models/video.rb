@@ -4,6 +4,8 @@ class Video < ActiveRecord::Base
 
   before_validation :fetch_title, on: :create
 
+  belongs_to :channel
+
   BASE_URL = 'http://youtu.be/'
 
   # Public: Return the video URL.
