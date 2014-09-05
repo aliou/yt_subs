@@ -7,6 +7,10 @@ class Channel < ActiveRecord::Base
   before_validation :fetch_title, on: :create
 
   private
+
+  # Private: Fetches the channel title from the YouTube API.
+  #
+  # Returns the title String or the error of type ActiveModel::Errors.
   def fetch_title
     unless self.url.nil?
       begin
