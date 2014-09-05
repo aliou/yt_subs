@@ -1,5 +1,8 @@
 class Video < ActiveRecord::Base
   validates :yt_id, presence: true, uniqueness: true
+  validates :title, presence: true
+
+  before_validation :fetch_title, on: :create
 
   BASE_URL = 'http://youtu.be/'
 
@@ -8,5 +11,19 @@ class Video < ActiveRecord::Base
   # Returns the URL String.
   def url
     BASE_URL + self.yt_id
+  end
+
+  private
+
+  def fetch_title
+    unless self.yt_id.nil? or self.title.present?
+      begin
+        video = Yt::Video.new id: self.yt_id
+        self.title = video.title
+      rescue
+        self.title = nil
+        errors.add(:yt_id, "must be a valid youtube video id")
+      end
+    end
   end
 end
