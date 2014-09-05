@@ -15,4 +15,9 @@ class ChannelTest < ActiveSupport::TestCase
     channel = Channel.create url: 'youtube.com/fullscreen'
     assert_equal 'Fullscreen', channel.title
   end
+
+  test 'should respond to videos' do
+    channel = channels :fullscreen
+    assert channel.respond_to? :videos
+  end
 end
