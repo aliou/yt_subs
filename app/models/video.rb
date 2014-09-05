@@ -1,12 +1,13 @@
 class Video < ActiveRecord::Base
-  validates :yt_id, presence: true, uniqueness: true
-  validates :title, presence: true
-
-  before_validation :fetch_title, on: :create
+  BASE_URL = 'http://youtu.be/'
 
   belongs_to :channel
 
-  BASE_URL = 'http://youtu.be/'
+  validates :yt_id, presence: true, uniqueness: true
+  validates :title, presence: true
+  validates :channel_id, presence: true
+
+  before_validation :fetch_title, on: :create
 
   # Public: Return the video URL.
   #
