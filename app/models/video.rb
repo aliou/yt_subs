@@ -3,6 +3,9 @@ class Video < ActiveRecord::Base
 
   BASE_URL = 'http://youtu.be/'
 
+  # Public: Return the video URL.
+  #
+  # Returns the URL String.
   def url
     BASE_URL + self.yt_id
   end
