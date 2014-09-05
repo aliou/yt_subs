@@ -13,6 +13,6 @@ class ChannelTest < ActiveSupport::TestCase
 
   test "should fetch the channel title" do
     channel = Channel.create url: 'youtube.com/fullscreen'
-    assert channel.title
+    assert_equal 'Fullscreen', channel.title
   end
 end
