@@ -1,11 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  url: MyString
-  last_fetched: 2014-08-12 14:58:09
-
-two:
-  title: MyString
-  url: MyString
-  last_fetched: 2014-08-12 14:58:09
+fullscreen:
+  title: 'Fullscreen'
+  url: 'youtube.com/fullscreen'
+  last_fetched: <%= Time.now - 1.day %>

@@ -1,9 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  yt_id: MyString
-  date: 2014-09-01 20:12:16
-
-two:
-  yt_id: MyString
-  date: 2014-09-01 20:12:16
+fullscreen_creator_platform:
+  yt_id: 'MESycYJytkU'
+  title: 'Fullscreen Creator Platform'
+  date: 2013-07-09 16:27:32
+  channel: fullscreen
