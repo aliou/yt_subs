@@ -8,6 +8,7 @@ class ChannelsController < ApplicationController
   end
 
   private
+
   def set_channel
     @channel = Channel.where(id: params[:id]).first
   end

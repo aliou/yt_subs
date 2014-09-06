@@ -1,0 +1,8 @@
+<h2>Last videos</h2>
+<ul class='list-group'>
+  <% @videos.each do |video| %>
+  <li class='list-group-item'>
+    <%= video.name %>
+  </li>
+  <% end %>
+</ul>
