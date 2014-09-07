@@ -3,5 +3,83 @@
 fullscreen_creator_platform:
   yt_id: 'MESycYJytkU'
   title: 'Fullscreen Creator Platform'
-  date: 2013-07-09 16:27:32
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+see_you_at_vidcon:
+  yt_id: ylSA0zd1mfo
+  title: See You at VidCon 2014!
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+grow_your_audience:
+  yt_id: EAueRiAWYp0
+  title: Grow your audience with Fullscreen Groups!
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+power_to_the_creators:
+  yt_id: 2NW_AqhkYyQ
+  title: Power To The Creators | Fullscreen
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+jackvale_scary_pranks:
+  yt_id: JhRmvEP4IJ8
+  title: JackVale Scary PRANKS! | Colossal Collab
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+swiftor_gamer_faces:
+  yt_id: cpIuWdz-8oc
+  title: Swiftor Gamer Faces | Colossal Collab
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+sam_tsui:
+  yt_id: OgxnKHU668g
+  title: Sam Tsui "Make It Up" | Colossal Collab
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+fullscreen_spreadshirt_shops:
+  yt_id: CNIKQKvUGaA
+  title: Fullscreen Spreadshirt Shops [LIVE SHOW]
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+misterepicmann:
+  yt_id: SCUh7Ajbcpk
+  title: MisterEpicMann | Colossal Collab
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+sign_in_with_fullscreen:
+  yt_id: kCMDsh9cBjE
+  title: Sign In With Fullscreen
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+turkey_stuffing:
+  yt_id: zKh04kpMONI
+  title: Turkey Stuffing | Colossal Collab
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+# how_to_be_cool_at_vidcon:
+#   yt_id: waa8JutImvY
+#   title: How To Be Cool At Vidcon
+#   date: <%= rand(1.day.ago..Time.now) %>
+#   channel: fullscreen
+
+one_channel_design:
+  yt_id: ROv863DuJu4
+  title: One Channel Design Preparation | Fullscreen Live
+  date: <%= rand(1.day.ago..Time.now) %>
+  channel: fullscreen
+
+first_youtube_app:
+  yt_id: tMX1GQ1f4Vw
+  title: First YouTube App for Google Glass | Fullscreen BEAM
+  date: <%= rand(1.day.ago..Time.now) %>
   channel: fullscreen
