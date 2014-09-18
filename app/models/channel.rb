@@ -20,7 +20,7 @@ class Channel < ActiveRecord::Base
         self.title = channel.title
       rescue Yt::Error
         self.title = nil
-        errors.add(:url, 'must be a valid youtube channel url')
+        errors.add(:url, 'Must be a valid youtube channel url')
       end
     end
   end

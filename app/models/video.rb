@@ -25,7 +25,7 @@ class Video < ActiveRecord::Base
         self.title = video.title
       rescue
         self.title = nil
-        errors.add(:yt_id, "must be a valid youtube video id")
+        errors.add(:yt_id, "Must be a valid youtube video id")
       end
     end
   end
