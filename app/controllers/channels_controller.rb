@@ -21,7 +21,7 @@ class ChannelsController < ApplicationController
     @channel.last_fetched = 1.day.ago
 
     if @channel.save
-      redirect_to @channel, 'Channel successfully created.'
+      redirect_to @channel, notice: 'Channel was successfully created.'
     else
       render :new
     end
@@ -53,6 +53,6 @@ class ChannelsController < ApplicationController
   #
   # Returns Hash with the white listed params.
   def channel_params
-    params[:channel]
+    params.require(:channel).permit(:url)
   end
 end
