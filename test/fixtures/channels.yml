@@ -7,7 +7,7 @@ fullscreen:
 
 caseyistat:
   title: 'CaseyNeistat'
-  url: 'youtbe.com/caseyneistat'
+  url: 'youtube.com/caseyneistat'
   last_fetched: <%= Time.now - 2.day %>
 
 alli:
