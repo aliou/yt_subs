@@ -18,7 +18,7 @@ class ChannelsControllerTest < ActionController::TestCase
 
   test 'should create channel' do
     assert_difference('Channel.count') do
-      post :create, channel: {  }
+      post :create, channel: { url: 'youtube.com/funforlouis' }
     end
 
     assert_redirected_to channel_path(assigns(:channel))
@@ -35,7 +35,7 @@ class ChannelsControllerTest < ActionController::TestCase
   end
 
   test 'should update channel' do
-    patch :update, id: @channel, channel: {  }
+    patch :update, id: @channel, channel: { url: 'youtube.com/funforlouis' }
     assert_redirected_to channel_path(assigns(:channel))
   end
 
