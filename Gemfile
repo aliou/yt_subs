@@ -18,6 +18,8 @@ gem 'unicorn'
 
 gem 'yt', '~> 0.10.2'
 
+gem 'simple_form'
+
 group :test, :development do
   gem 'dotenv-rails'
 end
