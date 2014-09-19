@@ -2,7 +2,9 @@ class ChannelsController < ApplicationController
   before_action :set_channel, only: [:show, :edit, :update, :destroy]
 
   def index
-    @channels = Channel.all
+    @channels = Channel.all.sort do |a, b|
+      a.title.downcase <=> b.title.downcase
+    end
   end
 
   def show
