@@ -7,7 +7,7 @@ class Video < ActiveRecord::Base
   validates :title, presence: true
   validates :channel_id, presence: true
 
-  before_validation :fetch_title, on: :create
+  before_validation :fetch_informations, on: :create
 
   # Public: Return the video URL.
   #
@@ -18,11 +18,12 @@ class Video < ActiveRecord::Base
 
   private
 
-  def fetch_title
+  def fetch_informations
     unless self.yt_id.nil? or self.title.present?
       begin
         video = Yt::Video.new id: self.yt_id
         self.title = video.title
+        self.date = video.published_at
       rescue
         self.title = nil
         errors.add(:yt_id, "Must be a valid youtube video id")
