@@ -2,5 +2,8 @@
 
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_channel_path(@channel) %> |
-<%= link_to 'Back', channels_path %>
+<% @videos.each do |video| %>
+  <p><%= link_to video.title, video.url %></p>
+<% end %>
+
+<%= link_to 'Edit', edit_channel_path(@channel) %>

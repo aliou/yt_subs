@@ -8,7 +8,6 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -17,16 +16,21 @@
   </head>
   <body>
     <div class='container'>
+      <div class='col-md-8 col-md-push-2'>
 
-      <nav class="navbar navbar-inverse">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">yt</a>
-        </div>
-        <div class="navbar-right"> &plus; </div>
-      </nav>
+        <nav class="navbar navbar-inverse">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">yt</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="<%= channels_path %>">List Channels</a></li>
+            <li><a href="<%= new_channel_path %>">Add Channels</a></li>
+          </ul>
+        </nav>
 
-      <%= yield %>
+        <%= yield %>
 
+      </div>
     </div>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
