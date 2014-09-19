@@ -36,9 +36,12 @@ end
 
 group :development do
   gem 'pry-rails'
+
   gem 'rails_12factor'
   gem 'spring'
+
   gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 ###############################################################################
