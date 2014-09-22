@@ -3,14 +3,14 @@
 fullscreen:
   title: 'Fullscreen'
   url: 'youtube.com/fullscreen'
-  last_fetched: <%= Time.now - 2.day %>
+  last_fetched: <%= 1.month.ago %>
 
 caseyistat:
   title: 'CaseyNeistat'
   url: 'youtube.com/caseyneistat'
-  last_fetched: <%= Time.now - 2.day %>
+  last_fetched: <%= 1.month.ago %>
 
 alli:
   title: 'Alli'
   url: 'youtube.com/alli'
-  last_fetched: <%= Time.now - 2.day %>
+  last_fetched: <%= 1.month.ago %>

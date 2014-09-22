@@ -27,7 +27,7 @@ class ChannelTest < ActiveSupport::TestCase
 
   test 'should fetch last videos' do
     VCR.use_cassette 'channel_model_fetch_videos' do
-      channel = channels :fullscreen
+      channel = channels :caseyistat
       videos = channel.fetch_videos
 
       assert videos.any?

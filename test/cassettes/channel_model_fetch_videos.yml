@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/channels?forUsername=fullscreen&key=<API_KEY>&part=id
+    uri: https://www.googleapis.com/youtube/v3/channels?forUsername=caseyneistat&key=<API_KEY>&part=id
     body:
       encoding: US-ASCII
       string: ''
@@ -17,13 +17,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sun, 21 Sep 2014 21:07:28 GMT
+      - Mon, 22 Sep 2014 20:02:17 GMT
       Date:
-      - Sun, 21 Sep 2014 21:07:28 GMT
+      - Mon, 22 Sep 2014 20:02:17 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/0-deMJN8fij-FY_3fxliv4xp360"'
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/Lb5QkwmbUXlzoOti9HVBRWgJW7A"'
       Content-Type:
       - application/json; charset=UTF-8
       X-Content-Type-Options:
@@ -43,7 +43,7 @@ http_interactions:
       string: |
         {
          "kind": "youtube#channelListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/0-deMJN8fij-FY_3fxliv4xp360\"",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/Lb5QkwmbUXlzoOti9HVBRWgJW7A\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 5
@@ -51,16 +51,16 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#channel",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/O8y2n3KxHEIl-wf11MCEPQn0970\"",
-           "id": "UCxO1tY8h1AhOz0T4ENwmpow"
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/bmVCO_y8HxXYiQTD0OUVqFkYUO0\"",
+           "id": "UCtinbF-Q-fVthA0qrFQTgXQ"
           }
          ]
         }
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:28 GMT
+  recorded_at: Mon, 22 Sep 2014 20:02:16 GMT
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCxO1tY8h1AhOz0T4ENwmpow&key=<API_KEY>&maxResults=50&order=date&part=snippet&publishedAfter=2013-09-21T21:07:28%2B00:00&publishedBefore=2014-09-21T23:07:28%2B02:00&type=video
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCtinbF-Q-fVthA0qrFQTgXQ&key=<API_KEY>&maxResults=50&order=date&part=snippet&publishedAfter=2014-08-22T20:02:15%2B00:00&publishedBefore=2014-09-22T22:02:15%2B02:00&type=video
     body:
       encoding: US-ASCII
       string: ''
@@ -75,13 +75,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sun, 21 Sep 2014 21:07:28 GMT
+      - Mon, 22 Sep 2014 20:02:17 GMT
       Date:
-      - Sun, 21 Sep 2014 21:07:28 GMT
+      - Mon, 22 Sep 2014 20:02:17 GMT
       Cache-Control:
       - private, max-age=120, must-revalidate, no-transform
       Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/X18su0z1MW-afjbDiWe2475EeTc"'
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/9G8hrTDnxrUlXUZ4VELrn97GVB0"'
       Content-Type:
       - application/json; charset=UTF-8
       X-Content-Type-Options:
@@ -91,222 +91,137 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '9104'
+      - '3812'
       Server:
       - GSE
       Alternate-Protocol:
       - 443:quic,p=0.002
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogImtpbmQiOiAieW91dHViZSNzZWFyY2hMaXN0UmVzcG9uc2UiLAogImV0
-        YWciOiAiXCJrakVGbVA5MEd2ckNsOEJPYk1RdEdvUmZnYVEvWDE4c3UwejFN
-        Vy1hZmpiRGlXZTI0NzVFZVRjXCIiLAogInBhZ2VJbmZvIjogewogICJ0b3Rh
-        bFJlc3VsdHMiOiAxMCwKICAicmVzdWx0c1BlclBhZ2UiOiA1MAogfSwKICJp
-        dGVtcyI6IFsKICB7CiAgICJraW5kIjogInlvdXR1YmUjc2VhcmNoUmVzdWx0
-        IiwKICAgImV0YWciOiAiXCJrakVGbVA5MEd2ckNsOEJPYk1RdEdvUmZnYVEv
-        c2NoSWxmNFRPX2pUYXFmZnMxMVoxb1gwTmpBXCIiLAogICAiaWQiOiB7CiAg
-        ICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICJ2aWRlb0lkIjogInls
-        U0EwemQxbWZvIgogICB9LAogICAic25pcHBldCI6IHsKICAgICJwdWJsaXNo
-        ZWRBdCI6ICIyMDE0LTA2LTE5VDE4OjQ4OjMwLjAwMFoiLAogICAgImNoYW5u
-        ZWxJZCI6ICJVQ3hPMXRZOGgxQWhPejBUNEVOd21wb3ciLAogICAgInRpdGxl
-        IjogIlNlZSBZb3UgYXQgVmlkQ29uIDIwMTQhIiwKICAgICJkZXNjcmlwdGlv
-        biI6ICJUaGlzIHllYXIgRnVsbHNjcmVlbiBoYXMgdG9ucyBvZiBvcHRpb25z
-        IHRvIGVuaGFuY2UgeW91ciBWaWRDb24gMjAxNCBleHBlcmllbmNlLiBGcm9t
-        IGxpdmUgcGVyZm9ybWFuY2VzIGZyb20geW91ciBmYXZvcml0ZSBGdWxsc2Ny
-        ZWVuZXJzIHRvIGEgVklQIHNjcmVlbmluZyBvLiIsCiAgICAidGh1bWJuYWls
-        cyI6IHsKICAgICAiZGVmYXVsdCI6IHsKICAgICAgInVybCI6ICJodHRwczov
-        L2kueXRpbWcuY29tL3ZpL3lsU0EwemQxbWZvL2RlZmF1bHQuanBnIgogICAg
-        IH0sCiAgICAgIm1lZGl1bSI6IHsKICAgICAgInVybCI6ICJodHRwczovL2ku
-        eXRpbWcuY29tL3ZpL3lsU0EwemQxbWZvL21xZGVmYXVsdC5qcGciCiAgICAg
-        fSwKICAgICAiaGlnaCI6IHsKICAgICAgInVybCI6ICJodHRwczovL2kueXRp
-        bWcuY29tL3ZpL3lsU0EwemQxbWZvL2hxZGVmYXVsdC5qcGciCiAgICAgfQog
-        ICAgfSwKICAgICJjaGFubmVsVGl0bGUiOiAiRnVsbHNjcmVlbiIsCiAgICAi
-        bGl2ZUJyb2FkY2FzdENvbnRlbnQiOiAibm9uZSIKICAgfQogIH0sCiAgewog
-        ICAia2luZCI6ICJ5b3V0dWJlI3NlYXJjaFJlc3VsdCIsCiAgICJldGFnIjog
-        Ilwia2pFRm1QOTBHdnJDbDhCT2JNUXRHb1JmZ2FRL0ZKRW9uU3lUQnF1VGYw
-        N21sV01GZHAza1Uya1wiIiwKICAgImlkIjogewogICAgImtpbmQiOiAieW91
-        dHViZSN2aWRlbyIsCiAgICAidmlkZW9JZCI6ICJFQXVlUmlBV1lwMCIKICAg
-        fSwKICAgInNuaXBwZXQiOiB7CiAgICAicHVibGlzaGVkQXQiOiAiMjAxNC0w
-        NS0xNlQxNjoxNDo1MS4wMDBaIiwKICAgICJjaGFubmVsSWQiOiAiVUN4TzF0
-        WThoMUFoT3owVDRFTndtcG93IiwKICAgICJ0aXRsZSI6ICJHcm93IHlvdXIg
-        YXVkaWVuY2Ugd2l0aCBGdWxsc2NyZWVuIEdyb3VwcyEiLAogICAgImRlc2Ny
-        aXB0aW9uIjogIldlJ3JlIHRocmlsbGVkIHRvIGxhdW5jaCBvbmUgb2YgdGhl
-        IG1vc3QgZXhjaXRpbmcgdXBkYXRlcyB0byB0aGUgRnVsbHNjcmVlbiBDcmVh
-        dG9yIFBsYXRmb3JtIHlldOKAlEdyb3Vwcy4gR3JvdXBzIGhlbHAgeW91IGdy
-        b3cgeW91ciBhdWRpZW5jZSBhbG9uZ3NpZGUgY3JlYXRvci4iLAogICAgInRo
-        dW1ibmFpbHMiOiB7CiAgICAgImRlZmF1bHQiOiB7CiAgICAgICJ1cmwiOiAi
-        aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9FQXVlUmlBV1lwMC9kZWZhdWx0Lmpw
-        ZyIKICAgICB9LAogICAgICJtZWRpdW0iOiB7CiAgICAgICJ1cmwiOiAiaHR0
-        cHM6Ly9pLnl0aW1nLmNvbS92aS9FQXVlUmlBV1lwMC9tcWRlZmF1bHQuanBn
-        IgogICAgIH0sCiAgICAgImhpZ2giOiB7CiAgICAgICJ1cmwiOiAiaHR0cHM6
-        Ly9pLnl0aW1nLmNvbS92aS9FQXVlUmlBV1lwMC9ocWRlZmF1bHQuanBnIgog
-        ICAgIH0KICAgIH0sCiAgICAiY2hhbm5lbFRpdGxlIjogIkZ1bGxzY3JlZW4i
-        LAogICAgImxpdmVCcm9hZGNhc3RDb250ZW50IjogIm5vbmUiCiAgIH0KICB9
-        LAogIHsKICAgImtpbmQiOiAieW91dHViZSNzZWFyY2hSZXN1bHQiLAogICAi
-        ZXRhZyI6ICJcImtqRUZtUDkwR3ZyQ2w4Qk9iTVF0R29SZmdhUS9IZVh1Q1Qy
-        QzlWUGZWTllTbGpzRWN3U0NTN29cIiIsCiAgICJpZCI6IHsKICAgICJraW5k
-        IjogInlvdXR1YmUjdmlkZW8iLAogICAgInZpZGVvSWQiOiAiMk5XX0FxaGtZ
-        eVEiCiAgIH0sCiAgICJzbmlwcGV0IjogewogICAgInB1Ymxpc2hlZEF0Ijog
-        IjIwMTQtMDUtMTRUMTk6MzY6NTQuMDAwWiIsCiAgICAiY2hhbm5lbElkIjog
-        IlVDeE8xdFk4aDFBaE96MFQ0RU53bXBvdyIsCiAgICAidGl0bGUiOiAiUG93
-        ZXIgVG8gVGhlIENyZWF0b3JzIHwgRnVsbHNjcmVlbiIsCiAgICAiZGVzY3Jp
-        cHRpb24iOiAiRnVsbHNjcmVlbiBpcyB0aGUgZmlyc3QgbWVkaWEgY29tcGFu
-        eSBmb3IgdGhlIGNvbm5lY3RlZCBnZW5lcmF0aW9uLiBXZSBwb3dlciB0aGUg
-        Y3JlYXRpb24gYW5kIHNoYXJpbmcgb2YgdmlkZW8gd2l0aCB0aGUgcHJlbWll
-        cmUsIG9ubGluZSBjcmVhdG9ycyBhbmQgd29ybGQncy4uLiIsCiAgICAidGh1
-        bWJuYWlscyI6IHsKICAgICAiZGVmYXVsdCI6IHsKICAgICAgInVybCI6ICJo
-        dHRwczovL2kueXRpbWcuY29tL3ZpLzJOV19BcWhrWXlRL2RlZmF1bHQuanBn
-        IgogICAgIH0sCiAgICAgIm1lZGl1bSI6IHsKICAgICAgInVybCI6ICJodHRw
-        czovL2kueXRpbWcuY29tL3ZpLzJOV19BcWhrWXlRL21xZGVmYXVsdC5qcGci
-        CiAgICAgfSwKICAgICAiaGlnaCI6IHsKICAgICAgInVybCI6ICJodHRwczov
-        L2kueXRpbWcuY29tL3ZpLzJOV19BcWhrWXlRL2hxZGVmYXVsdC5qcGciCiAg
-        ICAgfQogICAgfSwKICAgICJjaGFubmVsVGl0bGUiOiAiRnVsbHNjcmVlbiIs
-        CiAgICAibGl2ZUJyb2FkY2FzdENvbnRlbnQiOiAibm9uZSIKICAgfQogIH0s
-        CiAgewogICAia2luZCI6ICJ5b3V0dWJlI3NlYXJjaFJlc3VsdCIsCiAgICJl
-        dGFnIjogIlwia2pFRm1QOTBHdnJDbDhCT2JNUXRHb1JmZ2FRL1RHdkhfeWpF
-        a3RFMUZMeHF1QnlGUUo2dmZxc1wiIiwKICAgImlkIjogewogICAgImtpbmQi
-        OiAieW91dHViZSN2aWRlbyIsCiAgICAidmlkZW9JZCI6ICJKaFJtdkVQNElK
-        OCIKICAgfSwKICAgInNuaXBwZXQiOiB7CiAgICAicHVibGlzaGVkQXQiOiAi
-        MjAxNC0wMy0wM1QxODoxNzo1My4wMDBaIiwKICAgICJjaGFubmVsSWQiOiAi
-        VUN4TzF0WThoMUFoT3owVDRFTndtcG93IiwKICAgICJ0aXRsZSI6ICJKYWNr
-        VmFsZSBTY2FyeSBQUkFOS1MhIHwgQ29sb3NzYWwgQ29sbGFiIiwKICAgICJk
-        ZXNjcmlwdGlvbiI6ICJGSUxMIE9VVCBUSElTIEZPUk0gV0hFTiBZT1UnUkUg
-        UkVBRFkgVE8gU1VCTUlUOiBodHRwOi8vZnVsbC5zYy9OTkZRWFggQ2hlY2sg
-        b3V0IGFuZCBzaGFyZSB0aGUgRnVsbHNjcmVlbiBDb2xvc3NhbCBDb2xsYWIg
-        cGxheWxpc3QhIiwKICAgICJ0aHVtYm5haWxzIjogewogICAgICJkZWZhdWx0
-        IjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvSmhS
-        bXZFUDRJSjgvZGVmYXVsdC5qcGciCiAgICAgfSwKICAgICAibWVkaXVtIjog
-        ewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvSmhSbXZF
-        UDRJSjgvbXFkZWZhdWx0LmpwZyIKICAgICB9LAogICAgICJoaWdoIjogewog
-        ICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvSmhSbXZFUDRJ
-        SjgvaHFkZWZhdWx0LmpwZyIKICAgICB9CiAgICB9LAogICAgImNoYW5uZWxU
-        aXRsZSI6ICJGdWxsc2NyZWVuIiwKICAgICJsaXZlQnJvYWRjYXN0Q29udGVu
-        dCI6ICJub25lIgogICB9CiAgfSwKICB7CiAgICJraW5kIjogInlvdXR1YmUj
-        c2VhcmNoUmVzdWx0IiwKICAgImV0YWciOiAiXCJrakVGbVA5MEd2ckNsOEJP
-        Yk1RdEdvUmZnYVEvZTVwMUJjMEJRN281SHl6MWQ1T0xyejRnZHlBXCIiLAog
-        ICAiaWQiOiB7CiAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICJ2
-        aWRlb0lkIjogImNwSXVXZHotOG9jIgogICB9LAogICAic25pcHBldCI6IHsK
-        ICAgICJwdWJsaXNoZWRBdCI6ICIyMDE0LTAyLTAxVDIyOjAwOjAxLjAwMFoi
-        LAogICAgImNoYW5uZWxJZCI6ICJVQ3hPMXRZOGgxQWhPejBUNEVOd21wb3ci
-        LAogICAgInRpdGxlIjogIlN3aWZ0b3IgR2FtZXIgRmFjZXMgfCBDb2xvc3Nh
-        bCBDb2xsYWIiLAogICAgImRlc2NyaXB0aW9uIjogIkZJTEwgT1VUIFRISVMg
-        Rk9STSBXSEVOIFlPVSdSRSBSRUFEWSBUTyBTVUJNSVQ6IGh0dHA6Ly9mdWxs
-        LnNjLzFmdERLOFkgQ2hlY2sgb3V0IGFuZCBzaGFyZSB0aGUgRnVsbHNjcmVl
-        biBDb2xvc3NhbCBDb2xsYWIgcGxheWxpc3QhIiwKICAgICJ0aHVtYm5haWxz
-        IjogewogICAgICJkZWZhdWx0IjogewogICAgICAidXJsIjogImh0dHBzOi8v
-        aS55dGltZy5jb20vdmkvY3BJdVdkei04b2MvZGVmYXVsdC5qcGciCiAgICAg
-        fSwKICAgICAibWVkaXVtIjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55
-        dGltZy5jb20vdmkvY3BJdVdkei04b2MvbXFkZWZhdWx0LmpwZyIKICAgICB9
-        LAogICAgICJoaWdoIjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGlt
-        Zy5jb20vdmkvY3BJdVdkei04b2MvaHFkZWZhdWx0LmpwZyIKICAgICB9CiAg
-        ICB9LAogICAgImNoYW5uZWxUaXRsZSI6ICJGdWxsc2NyZWVuIiwKICAgICJs
-        aXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25lIgogICB9CiAgfSwKICB7CiAg
-        ICJraW5kIjogInlvdXR1YmUjc2VhcmNoUmVzdWx0IiwKICAgImV0YWciOiAi
-        XCJrakVGbVA5MEd2ckNsOEJPYk1RdEdvUmZnYVEvdUFMN3l4dkJTcWdVUU11
-        QnFFZFFGdnpmdFVBXCIiLAogICAiaWQiOiB7CiAgICAia2luZCI6ICJ5b3V0
-        dWJlI3ZpZGVvIiwKICAgICJ2aWRlb0lkIjogIk9neG5LSFU2NjhnIgogICB9
-        LAogICAic25pcHBldCI6IHsKICAgICJwdWJsaXNoZWRBdCI6ICIyMDE0LTAx
-        LTAxVDE5OjAyOjUxLjAwMFoiLAogICAgImNoYW5uZWxJZCI6ICJVQ3hPMXRZ
-        OGgxQWhPejBUNEVOd21wb3ciLAogICAgInRpdGxlIjogIlNhbSBUc3VpIFwi
-        TWFrZSBJdCBVcFwiIHwgQ29sb3NzYWwgQ29sbGFiIiwKICAgICJkZXNjcmlw
-        dGlvbiI6ICJDaGVjayBvdXQgYW5kIHNoYXJlIHRoZSBGdWxsc2NyZWVuIENv
-        bG9zc2FsIENvbGxhYiBwbGF5bGlzdCEgLSBodHRwOi8vZnVsbC5zYy8xYTFr
-        NkFoIENsaWNrIGhlcmUgdG8gY2hlY2sgb3V0IFNhbSBUc3VpISAtIGh0dHA6
-        Ly93d3cueW91dHViZS5jb20vc2FtdHN1aSBTZW5kLi4uIiwKICAgICJ0aHVt
-        Ym5haWxzIjogewogICAgICJkZWZhdWx0IjogewogICAgICAidXJsIjogImh0
-        dHBzOi8vaS55dGltZy5jb20vdmkvT2d4bktIVTY2OGcvZGVmYXVsdC5qcGci
-        CiAgICAgfSwKICAgICAibWVkaXVtIjogewogICAgICAidXJsIjogImh0dHBz
-        Oi8vaS55dGltZy5jb20vdmkvT2d4bktIVTY2OGcvbXFkZWZhdWx0LmpwZyIK
-        ICAgICB9LAogICAgICJoaWdoIjogewogICAgICAidXJsIjogImh0dHBzOi8v
-        aS55dGltZy5jb20vdmkvT2d4bktIVTY2OGcvaHFkZWZhdWx0LmpwZyIKICAg
-        ICB9CiAgICB9LAogICAgImNoYW5uZWxUaXRsZSI6ICJGdWxsc2NyZWVuIiwK
-        ICAgICJsaXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25lIgogICB9CiAgfSwK
-        ICB7CiAgICJraW5kIjogInlvdXR1YmUjc2VhcmNoUmVzdWx0IiwKICAgImV0
-        YWciOiAiXCJrakVGbVA5MEd2ckNsOEJPYk1RdEdvUmZnYVEvN1dUcnFJdWhD
-        bzdvUHBzZnVlSVo1SnhMcTlzXCIiLAogICAiaWQiOiB7CiAgICAia2luZCI6
-        ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICJ2aWRlb0lkIjogIkNOSUtRS3ZVR2FB
-        IgogICB9LAogICAic25pcHBldCI6IHsKICAgICJwdWJsaXNoZWRBdCI6ICIy
-        MDEzLTEyLTA5VDE4OjM1OjI3LjAwMFoiLAogICAgImNoYW5uZWxJZCI6ICJV
-        Q3hPMXRZOGgxQWhPejBUNEVOd21wb3ciLAogICAgInRpdGxlIjogIkZ1bGxz
-        Y3JlZW4gU3ByZWFkc2hpcnQgU2hvcHMgW0xJVkUgU0hPV10iLAogICAgImRl
-        c2NyaXB0aW9uIjogIkNvbWUgbGVhcm4gYWJvdXQgU3ByZWFkc2hpcnQgYW5k
-        IGhvdyB0byBzZXQgdXAgeW91ciBhY2NvdW50IHZpYSBTaWduIEluIFdpdGgg
-        RnVsbHNjcmVlbi4gR28gdG8gdGhlIENyZWF0b3IgUGxhdGZvcm0gYW5kIHNp
-        Z24gaW4gaGVyZTogLi4uIiwKICAgICJ0aHVtYm5haWxzIjogewogICAgICJk
-        ZWZhdWx0IjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20v
-        dmkvQ05JS1FLdlVHYUEvZGVmYXVsdC5qcGciCiAgICAgfSwKICAgICAibWVk
-        aXVtIjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkv
-        Q05JS1FLdlVHYUEvbXFkZWZhdWx0LmpwZyIKICAgICB9LAogICAgICJoaWdo
-        IjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvQ05J
-        S1FLdlVHYUEvaHFkZWZhdWx0LmpwZyIKICAgICB9CiAgICB9LAogICAgImNo
-        YW5uZWxUaXRsZSI6ICJGdWxsc2NyZWVuIiwKICAgICJsaXZlQnJvYWRjYXN0
-        Q29udGVudCI6ICJub25lIgogICB9CiAgfSwKICB7CiAgICJraW5kIjogInlv
-        dXR1YmUjc2VhcmNoUmVzdWx0IiwKICAgImV0YWciOiAiXCJrakVGbVA5MEd2
-        ckNsOEJPYk1RdEdvUmZnYVEvTWlWTjVxSlZnQ0kxNFJDVGZ3M3I0T3pIdTcw
-        XCIiLAogICAiaWQiOiB7CiAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwK
-        ICAgICJ2aWRlb0lkIjogIlNDVWg3QWpiY3BrIgogICB9LAogICAic25pcHBl
-        dCI6IHsKICAgICJwdWJsaXNoZWRBdCI6ICIyMDEzLTExLTI5VDIxOjE0OjE5
-        LjAwMFoiLAogICAgImNoYW5uZWxJZCI6ICJVQ3hPMXRZOGgxQWhPejBUNEVO
-        d21wb3ciLAogICAgInRpdGxlIjogIk1pc3RlckVwaWNNYW5uIHwgQ29sb3Nz
-        YWwgQ29sbGFiIiwKICAgICJkZXNjcmlwdGlvbiI6ICJDaGVjayBvdXQgYW5k
-        IHNoYXJlIHRoZSBGdWxsc2NyZWVuIENvbG9zc2FsIENvbGxhYiBwbGF5bGlz
-        dCEgLSBodHRwOi8vZnVsbC5zYy9JcnpiakMgQ2xpY2sgaGVyZSB0byBjaGVj
-        ayBvdXQgTWlzdGVyRXBpY01hbm4hIC0gaHR0cDovL3d3dy55b3V0dWJlLmNv
-        bS9taXN0ZXJlLi4uIiwKICAgICJ0aHVtYm5haWxzIjogewogICAgICJkZWZh
-        dWx0IjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkv
-        U0NVaDdBamJjcGsvZGVmYXVsdC5qcGciCiAgICAgfSwKICAgICAibWVkaXVt
-        IjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvU0NV
-        aDdBamJjcGsvbXFkZWZhdWx0LmpwZyIKICAgICB9LAogICAgICJoaWdoIjog
-        ewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvU0NVaDdB
-        amJjcGsvaHFkZWZhdWx0LmpwZyIKICAgICB9CiAgICB9LAogICAgImNoYW5u
-        ZWxUaXRsZSI6ICJGdWxsc2NyZWVuIiwKICAgICJsaXZlQnJvYWRjYXN0Q29u
-        dGVudCI6ICJub25lIgogICB9CiAgfSwKICB7CiAgICJraW5kIjogInlvdXR1
-        YmUjc2VhcmNoUmVzdWx0IiwKICAgImV0YWciOiAiXCJrakVGbVA5MEd2ckNs
-        OEJPYk1RdEdvUmZnYVEvQUZ2ZGQ2NlcySWdaWmN6RHR1N3ZRTHpCS3RRXCIi
-        LAogICAiaWQiOiB7CiAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAg
-        ICJ2aWRlb0lkIjogImtDTURzaDljQmpFIgogICB9LAogICAic25pcHBldCI6
-        IHsKICAgICJwdWJsaXNoZWRBdCI6ICIyMDEzLTExLTE5VDE3OjE0OjUyLjAw
-        MFoiLAogICAgImNoYW5uZWxJZCI6ICJVQ3hPMXRZOGgxQWhPejBUNEVOd21w
-        b3ciLAogICAgInRpdGxlIjogIlNpZ24gSW4gV2l0aCBGdWxsc2NyZWVuIiwK
-        ICAgICJkZXNjcmlwdGlvbiI6ICJBbm5vdW5jaW5nIFNpZ24gSW4gd2l0aCBG
-        dWxsc2NyZWVuOiBvdXIgbmV3IHNlcnZpY2UgdGhhdCBnaXZlcyB5b3UgVklQ
-        IGFjY2VzcyB0byBhIHdvcmxkIG9mIGFwcHMgZm9yIHZpZGVvIGNyZWF0b3Jz
-        IGZyb20gYWxsIG92ZXIgdGhlIHdlYi4gTGVhcm4gbW9yZSB2aWEgb3VyLi4u
-        IiwKICAgICJ0aHVtYm5haWxzIjogewogICAgICJkZWZhdWx0IjogewogICAg
-        ICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkva0NNRHNoOWNCakUv
-        ZGVmYXVsdC5qcGciCiAgICAgfSwKICAgICAibWVkaXVtIjogewogICAgICAi
-        dXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkva0NNRHNoOWNCakUvbXFk
-        ZWZhdWx0LmpwZyIKICAgICB9LAogICAgICJoaWdoIjogewogICAgICAidXJs
-        IjogImh0dHBzOi8vaS55dGltZy5jb20vdmkva0NNRHNoOWNCakUvaHFkZWZh
-        dWx0LmpwZyIKICAgICB9CiAgICB9LAogICAgImNoYW5uZWxUaXRsZSI6ICJG
-        dWxsc2NyZWVuIiwKICAgICJsaXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25l
-        IgogICB9CiAgfSwKICB7CiAgICJraW5kIjogInlvdXR1YmUjc2VhcmNoUmVz
-        dWx0IiwKICAgImV0YWciOiAiXCJrakVGbVA5MEd2ckNsOEJPYk1RdEdvUmZn
-        YVEvS2hLVkc3aEwzVy10OGFBb3VxVGJfQWhYZlVnXCIiLAogICAiaWQiOiB7
-        CiAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICJ2aWRlb0lkIjog
-        InpLaDA0a3BNT05JIgogICB9LAogICAic25pcHBldCI6IHsKICAgICJwdWJs
-        aXNoZWRBdCI6ICIyMDEzLTExLTEzVDIwOjM5OjEzLjAwMFoiLAogICAgImNo
-        YW5uZWxJZCI6ICJVQ3hPMXRZOGgxQWhPejBUNEVOd21wb3ciLAogICAgInRp
-        dGxlIjogIlR1cmtleSBTdHVmZmluZyB8IENvbG9zc2FsIENvbGxhYiIsCiAg
-        ICAiZGVzY3JpcHRpb24iOiAiQ2hlY2sgb3V0IGFuZCBzaGFyZSB0aGUgRnVs
-        bHNjcmVlbiBDb2xvc3NhbCBDb2xsYWIgcGxheWxpc3QhIC0gaHR0cDovL2Z1
-        bGwuc2MvMWFFWGxnTiBDbGljayB0byBsZXQgdHdpdHRlciBrbm93IHlvdSdy
-        ZSBtYWtpbmcgYSB2aWRlbyBmb3IgQ29sb3NzYWwgQ29sbGFiISAtIC4uLiIs
-        CiAgICAidGh1bWJuYWlscyI6IHsKICAgICAiZGVmYXVsdCI6IHsKICAgICAg
-        InVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL3pLaDA0a3BNT05JL2Rl
-        ZmF1bHQuanBnIgogICAgIH0sCiAgICAgIm1lZGl1bSI6IHsKICAgICAgInVy
-        bCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL3pLaDA0a3BNT05JL21xZGVm
-        YXVsdC5qcGciCiAgICAgfSwKICAgICAiaGlnaCI6IHsKICAgICAgInVybCI6
-        ICJodHRwczovL2kueXRpbWcuY29tL3ZpL3pLaDA0a3BNT05JL2hxZGVmYXVs
-        dC5qcGciCiAgICAgfQogICAgfSwKICAgICJjaGFubmVsVGl0bGUiOiAiRnVs
-        bHNjcmVlbiIsCiAgICAibGl2ZUJyb2FkY2FzdENvbnRlbnQiOiAibm9uZSIK
-        ICAgfQogIH0KIF0KfQo=
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#searchListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/9G8hrTDnxrUlXUZ4VELrn97GVB0\"",
+         "pageInfo": {
+          "totalResults": 5,
+          "resultsPerPage": 50
+         },
+         "items": [
+          {
+           "kind": "youtube#searchResult",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/SqICFUmyasm87FABROmU89kTsSs\"",
+           "id": {
+            "kind": "youtube#video",
+            "videoId": "Ef_BznBwktw"
+           },
+           "snippet": {
+            "publishedAt": "2014-09-20T12:18:08.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "Black Market Takes Over the iPhone 6 Lines",
+            "description": "Some thoughts from me (the guy who made this movie). I am a big tech nerd. I slept on the streets to get the very first iPhone, when I was a teenager I would wait ...",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/default.jpg"
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/mqdefault.jpg"
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/hqdefault.jpg"
+             }
+            },
+            "channelTitle": "caseyneistat",
+            "liveBroadcastContent": "none"
+           }
+          },
+          {
+           "kind": "youtube#searchResult",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/aYL0tzeQ1NhxGR3WAs2mGsIhtnM\"",
+           "id": {
+            "kind": "youtube#video",
+            "videoId": "iXCjwLnbH6Q"
+           },
+           "snippet": {
+            "publishedAt": "2014-09-12T13:07:35.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "Super Fun Day With Karlie Kloss",
+            "description": "add me on snapchat - caseyneistat check out https://soundcloud.com/discoteeth on http://instagram.com/caseyneistat on https://www.facebook.com/cneistat on ht...",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/default.jpg"
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/mqdefault.jpg"
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/hqdefault.jpg"
+             }
+            },
+            "channelTitle": "caseyneistat",
+            "liveBroadcastContent": "none"
+           }
+          },
+          {
+           "kind": "youtube#searchResult",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/ROxCFBSc_Pxg0UTOqk2NObl4TEc\"",
+           "id": {
+            "kind": "youtube#video",
+            "videoId": "kfIc944bSJ8"
+           },
+           "snippet": {
+            "publishedAt": "2014-08-28T17:14:51.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "A Love Story 8 Years in the Making",
+            "description": "find the original song \"Talk\" by Henry Hall here: https://soundcloud.com/henry_hall/talk-demo Outro instrumental by Max Barbaria and Henry Hall. Check out mo.",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/kfIc944bSJ8/default.jpg"
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/kfIc944bSJ8/mqdefault.jpg"
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/kfIc944bSJ8/hqdefault.jpg"
+             }
+            },
+            "channelTitle": "caseyneistat",
+            "liveBroadcastContent": "none"
+           }
+          },
+          {
+           "kind": "youtube#searchResult",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/yMlVJokhSsm6VdM95TsQcYpujJE\"",
+           "id": {
+            "kind": "youtube#video",
+            "videoId": "8xdBn_8AG84"
+           },
+           "snippet": {
+            "publishedAt": "2014-08-25T11:44:34.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "ALS Ice Bucket Challenge by Casey Neistat",
+            "description": "The ALS Ice Bucket Challenge was a triumph for all non-profit fund raising. The revenue generated from this super fun campaign is supported a great cause and.",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/default.jpg"
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/mqdefault.jpg"
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/hqdefault.jpg"
+             }
+            },
+            "channelTitle": "caseyneistat",
+            "liveBroadcastContent": "none"
+           }
+          }
+         ]
+        }
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:28 GMT
+  recorded_at: Mon, 22 Sep 2014 20:02:16 GMT
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=ylSA0zd1mfo&key=<API_KEY>&part=snippet
+    uri: https://www.googleapis.com/youtube/v3/videos?id=Ef_BznBwktw&key=<API_KEY>&part=snippet
     body:
       encoding: US-ASCII
       string: ''
@@ -321,13 +236,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sun, 21 Sep 2014 21:07:29 GMT
+      - Mon, 22 Sep 2014 20:02:17 GMT
       Date:
-      - Sun, 21 Sep 2014 21:07:29 GMT
+      - Mon, 22 Sep 2014 20:02:17 GMT
       Cache-Control:
       - private, max-age=300, must-revalidate, no-transform
       Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/iC2bZekFMtvpGkaxe1EeANuJHEs"'
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/PBIfufNlppdNc3lhQI-X0LWF7GU"'
       Content-Type:
       - application/json; charset=UTF-8
       X-Content-Type-Options:
@@ -337,7 +252,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '2498'
+      - '3154'
       Server:
       - GSE
       Alternate-Protocol:
@@ -347,7 +262,7 @@ http_interactions:
       string: |
         {
          "kind": "youtube#videoListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/iC2bZekFMtvpGkaxe1EeANuJHEs\"",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/PBIfufNlppdNc3lhQI-X0LWF7GU\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 1
@@ -355,873 +270,314 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#video",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/APw7flqGmkG79303wzzBT9kdMY4\"",
-           "id": "ylSA0zd1mfo",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/uNeARsVpVy3FOxQFFNYZfhtTe1k\"",
+           "id": "Ef_BznBwktw",
            "snippet": {
-            "publishedAt": "2014-06-19T18:48:30.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "See You at VidCon 2014!",
-            "description": "This year Fullscreen has tons of options to enhance your VidCon 2014 experience. From live performances from your favorite Fullscreeners to a VIP screening of \"The Fault in our Stars\" and \"Earth to Echo\" - we have you covered!\n\nAppearances  By:\n \nO2L: http://full.sc/1qwil6E\nBrittani Louise Taylor: http://full.sc/1kSuDyc\nfouseyTube: http://full.sc/1qwiHtT\nGrace Helbig: http://full.sc/1kSuXNs\nJack Vale: http://full.sc/1kSvbV0\nJason Horton: http://full.sc/1qwj3AK\nWeekly Chris: http://full.sc/1qwjeMm\nAndrea Russett http://full.sc/1kSvnU8\n\nAND MORE...\n\nWe can't wait to see you at #FullscreenVidCon!!\n\n\nFollow Fullscreen here:\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\n\nFullscreen is the first media company for the connected generation. We power the creation and sharing of video with the premiere, online creators and world's leading brands on a global scale. \n\nLed by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Los Angeles, California.",
+            "publishedAt": "2014-09-20T12:18:08.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "Black Market Takes Over the iPhone 6 Lines",
+            "description": "Some thoughts from me (the guy who made this movie).  I am a big tech nerd.  I slept on the streets to get the very first iPhone, when I was a teenager I would wait all night at the mall for a new video game.  For the 2013 launch of the iPhone 5s I made a short video about the lines in NYC, most of the video was of enthusiastic Apple fans, not unlike myself, eagerly waiting to get their hands on the new iPhone.  There was also a percentage of line sitters that lacked all enthusiasm, one in particular was asleep with her head inside of a garbage bag.  Those images bothered me, they were also the most talked about aspect of that 4 minute video.  For this year's iPhone 6 launch my intention was to cover that aspect of the story - sitters there for reasons other than their enthusiasm for the product.  \n\nI don't think Apple, the community or any of the people in line for any reason were doing anything wrong.  I attribute no fault for the bleak circumstances captured in this video.  If there is an opportunity for easy gains by reselling the phones then by all means do it.  I, also, cannot imagine Apple anticipated this or they would've better considered the roll out (they thought of everything else, including coffee for the people waiting outside).  \n\nThere should be better consideration of how to prevent a system that benefits those willing to sleep on the streets, near garbage, tolerating verbal abuse. \n\nI empathize with the ambitions of those willing to sit in line to earn.  Since making the video I have read a number of stories about the iPhone 6 selling for 3 or 4 times it's cost. \n\nRead more about the iPhone 6 Black Market in this Washington Post Article  - http://wapo.st/1uY2td5\n\n\nADD ME ON SNAPCHAT - caseyneistat \n\nPlease check out Aaron (our translator in the movie)\nhis twitter is @erinreiss\nyellowmountainmaps.com\nhe's a brilliant artist\n\nhttps://twitter.com/CaseyNeistat\nhttps://instagram.com/caseyneistat\nhttps://www.facebook.com/cneistat",
             "thumbnails": {
              "default": {
-              "url": "https://i.ytimg.com/vi/ylSA0zd1mfo/default.jpg",
+              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/default.jpg",
               "width": 120,
               "height": 90
              },
              "medium": {
-              "url": "https://i.ytimg.com/vi/ylSA0zd1mfo/mqdefault.jpg",
+              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/mqdefault.jpg",
               "width": 320,
               "height": 180
              },
              "high": {
-              "url": "https://i.ytimg.com/vi/ylSA0zd1mfo/hqdefault.jpg",
+              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/hqdefault.jpg",
               "width": 480,
               "height": 360
              },
              "standard": {
-              "url": "https://i.ytimg.com/vi/ylSA0zd1mfo/sddefault.jpg",
+              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             }
+            },
+            "channelTitle": "CaseyNeistat",
+            "categoryId": "19",
+            "liveBroadcastContent": "none"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Mon, 22 Sep 2014 20:02:16 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=iXCjwLnbH6Q&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Mon, 22 Sep 2014 20:02:17 GMT
+      Date:
+      - Mon, 22 Sep 2014 20:02:17 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/-bZucLg-QknWgJKlz2navilrZsw"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1344'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/-bZucLg-QknWgJKlz2navilrZsw\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/QJPlaqz3OtBojcbSS4DuycZd5js\"",
+           "id": "iXCjwLnbH6Q",
+           "snippet": {
+            "publishedAt": "2014-09-12T13:07:35.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "Super Fun Day With Karlie Kloss",
+            "description": "add me on snapchat - caseyneistat\n\ncheck out https://soundcloud.com/discoteeth \n\non http://instagram.com/caseyneistat\non https://www.facebook.com/cneistat\non https://twitter.com/CaseyNeistat",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             }
+            },
+            "channelTitle": "CaseyNeistat",
+            "categoryId": "19",
+            "liveBroadcastContent": "none"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Mon, 22 Sep 2014 20:02:17 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=kfIc944bSJ8&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Mon, 22 Sep 2014 20:02:18 GMT
+      Date:
+      - Mon, 22 Sep 2014 20:02:18 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/Bc5Yu9oROFmEKBkgy-831zu6W5E"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1437'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/Bc5Yu9oROFmEKBkgy-831zu6W5E\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/KKQSpXPt218VNbpzsTSTY0V8pm8\"",
+           "id": "kfIc944bSJ8",
+           "snippet": {
+            "publishedAt": "2014-08-28T17:14:51.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "A Love Story 8 Years in the Making",
+            "description": "find the original song \"Talk\" by Henry Hall here:\nhttps://soundcloud.com/henry_hall/talk-demo\n\nOutro instrumental by Max Barbaria and Henry Hall.\nCheck out more stuff by Max here:\nhttps://www.youtube.com/watch?v=KNzsvV8KtZE\n\nwedding footage provided by Henroux at www.fjs.co.za",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/kfIc944bSJ8/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/kfIc944bSJ8/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/kfIc944bSJ8/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/kfIc944bSJ8/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             }
+            },
+            "channelTitle": "CaseyNeistat",
+            "categoryId": "19",
+            "liveBroadcastContent": "none"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Mon, 22 Sep 2014 20:02:17 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=8xdBn_8AG84&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Mon, 22 Sep 2014 20:02:18 GMT
+      Date:
+      - Mon, 22 Sep 2014 20:02:18 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/itL3KLSnrD53FWNKgUy8Tl3Toic"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2722'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/itL3KLSnrD53FWNKgUy8Tl3Toic\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/HklpTaSwTCOketMq6ZNi3k5pIDQ\"",
+           "id": "8xdBn_8AG84",
+           "snippet": {
+            "publishedAt": "2014-08-25T11:44:34.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "ALS Ice Bucket Challenge by Casey Neistat",
+            "description": "The ALS Ice Bucket Challenge was a triumph for all non-profit fund raising.  The revenue generated from this super fun campaign is supported a great cause and I hope it pushes ALS research closer to finding a cure.\n\nSince I was already covered in ice water I thought why not take a minute to highlight a handful of other organizations doing great work.\n\nLeave Out Violence http://www.newyork.leaveoutviolence.org/ (LOVE) was created to reduce and help eliminate violence in the lives of youth and our communities by initiating a movement of youth spokespeople who communicate a message of non-violence.\n\nThe Endangered Species Coalition http://www.endangered.org/ works hard to protect our nation's disappearing wildlife.\n\nCharity:Water http://www.charitywater.org/ helps people in developing nations who lack access to clean water.\n\nThe ASPCA http://www.aspca.org/ works to prevent animal cruelty and finds homes for pets that need adoption.\n\nThe Coalition for the Homeless http://www.coalitionforthehomeless.org/ Helps people find affordable housing, sufficient food and the chance to work for a living wage.\n\nI am also a big supporter of Treat The Pain http://treatthepain.org/ an organization that provides pain medication to those who need it most, terminally ill people in developing nations with little access to medicine of any kind.\n\nThank you Braden for this great song -- http://www.bradendealmusic.com",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/sddefault.jpg",
               "width": 640,
               "height": 480
              },
              "maxres": {
-              "url": "https://i.ytimg.com/vi/ylSA0zd1mfo/maxresdefault.jpg",
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/maxresdefault.jpg",
               "width": 1280,
               "height": 720
              }
             },
-            "channelTitle": "Fullscreen",
-            "categoryId": "27",
+            "channelTitle": "CaseyNeistat",
+            "categoryId": "19",
             "liveBroadcastContent": "none"
            }
           }
          ]
         }
     http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:29 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=EAueRiAWYp0&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:29 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:29 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/zqXqtctVlJeF64AGp_UIhaWAdbk"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '2274'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogImtpbmQiOiAieW91dHViZSN2aWRlb0xpc3RSZXNwb25zZSIsCiAiZXRh
-        ZyI6ICJcImtqRUZtUDkwR3ZyQ2w4Qk9iTVF0R29SZmdhUS96cVhxdGN0VmxK
-        ZUY2NEFHcF9VSWhhV0FkYmtcIiIsCiAicGFnZUluZm8iOiB7CiAgInRvdGFs
-        UmVzdWx0cyI6IDEsCiAgInJlc3VsdHNQZXJQYWdlIjogMQogfSwKICJpdGVt
-        cyI6IFsKICB7CiAgICJraW5kIjogInlvdXR1YmUjdmlkZW8iLAogICAiZXRh
-        ZyI6ICJcImtqRUZtUDkwR3ZyQ2w4Qk9iTVF0R29SZmdhUS9fVVI0c1BJU3hJ
-        OXpqZ3Vpb01sS0l6Mm5uQ0VcIiIsCiAgICJpZCI6ICJFQXVlUmlBV1lwMCIs
-        CiAgICJzbmlwcGV0IjogewogICAgInB1Ymxpc2hlZEF0IjogIjIwMTQtMDUt
-        MTZUMTY6MTQ6NTEuMDAwWiIsCiAgICAiY2hhbm5lbElkIjogIlVDeE8xdFk4
-        aDFBaE96MFQ0RU53bXBvdyIsCiAgICAidGl0bGUiOiAiR3JvdyB5b3VyIGF1
-        ZGllbmNlIHdpdGggRnVsbHNjcmVlbiBHcm91cHMhIiwKICAgICJkZXNjcmlw
-        dGlvbiI6ICJXZSdyZSB0aHJpbGxlZCB0byBsYXVuY2ggb25lIG9mIHRoZSBt
-        b3N0IGV4Y2l0aW5nIHVwZGF0ZXMgdG8gdGhlIEZ1bGxzY3JlZW4gQ3JlYXRv
-        ciBQbGF0Zm9ybSB5ZXTigJRHcm91cHMuXG5cbkdyb3VwcyBoZWxwIHlvdSBn
-        cm93IHlvdXIgYXVkaWVuY2UgYWxvbmdzaWRlIGNyZWF0b3JzIGp1c3QgbGlr
-        ZSB5b3UuIFdoZXRoZXIgeW91J3JlIGEgTWluZWNyYWZ0ZXIsIGEgcm9jayBt
-        dXNpY2lhbiwgYSBiZWF1dHkgYmxvZ2dlciwgb3Igc29tZXRoaW5nIHRvdGFs
-        bHkgZGlmZmVyZW50LCB0aGVyZSdzIGEgcGxhY2UgaW4gR3JvdXBzIGp1c3Qg
-        Zm9yIHlvdS5cblxuRm9sbG93IEZ1bGxzY3JlZW4gaGVyZTpcblxuV2Vic2l0
-        ZTogaHR0cDovL2Z1bGwuc2MvbmZDNVhwXG5Ud2l0dGVyOiBodHRwOi8vZnVs
-        bC5zYy9aZUFCQ1BcbkZhY2Vib29rOiBodHRwOi8vZnVsbC5zYy8xNzByQ3Bz
-        XG5Hb29nbGUgUGx1czogaHR0cDovL2Z1bGwuc2MvVUNjYWo5XG5JbnN0YWdy
-        YW06IGh0dHA6Ly9mdWxsLnNjL1plQUlPTFxuVmluZTogaHR0cDovL2Z1bGwu
-        c2MvMXVuNWtmVFxuVHVtYmxyOiBodHRwOi8vZnVsbC5zYy8xdW41VUtFXG5c
-        bkZ1bGxzY3JlZW4gaXMgdGhlIGZpcnN0IG1lZGlhIGNvbXBhbnkgZm9yIHRo
-        ZSBjb25uZWN0ZWQgZ2VuZXJhdGlvbi4gV2UgcG93ZXIgdGhlIGNyZWF0aW9u
-        IGFuZCBzaGFyaW5nIG9mIHZpZGVvIHdpdGggdGhlIHByZW1pZXJlLCBvbmxp
-        bmUgY3JlYXRvcnMgYW5kIHdvcmxkJ3MgbGVhZGluZyBicmFuZHMgb24gYSBn
-        bG9iYWwgc2NhbGUuIFxuXG5MZWQgYnkgYW4gZXhwZXJpZW5jZWQgdGVhbSBv
-        bmxpbmUgdGhvdWdodC1sZWFkZXJzLCBGdWxsc2NyZWVuIHdhcyBmb3VuZGVk
-        IGluIEphbnVhcnkgMjAxMSBieSBHZW9yZ2UgU3Ryb21wb2xvcywgYSBjby1j
-        cmVhdG9yIG9mIHRoZSBZb3VUdWJlIFBhcnRuZXJzaGlwIFByb2dyYW0uIEZ1
-        bGxzY3JlZW4gaXMgYmFzZWQgaW4gTG9zIEFuZ2VsZXMsIENhbGlmb3JuaWEu
-        IiwKICAgICJ0aHVtYm5haWxzIjogewogICAgICJkZWZhdWx0IjogewogICAg
-        ICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvRUF1ZVJpQVdZcDAv
-        ZGVmYXVsdC5qcGciLAogICAgICAid2lkdGgiOiAxMjAsCiAgICAgICJoZWln
-        aHQiOiA5MAogICAgIH0sCiAgICAgIm1lZGl1bSI6IHsKICAgICAgInVybCI6
-        ICJodHRwczovL2kueXRpbWcuY29tL3ZpL0VBdWVSaUFXWXAwL21xZGVmYXVs
-        dC5qcGciLAogICAgICAid2lkdGgiOiAzMjAsCiAgICAgICJoZWlnaHQiOiAx
-        ODAKICAgICB9LAogICAgICJoaWdoIjogewogICAgICAidXJsIjogImh0dHBz
-        Oi8vaS55dGltZy5jb20vdmkvRUF1ZVJpQVdZcDAvaHFkZWZhdWx0LmpwZyIs
-        CiAgICAgICJ3aWR0aCI6IDQ4MCwKICAgICAgImhlaWdodCI6IDM2MAogICAg
-        IH0sCiAgICAgInN0YW5kYXJkIjogewogICAgICAidXJsIjogImh0dHBzOi8v
-        aS55dGltZy5jb20vdmkvRUF1ZVJpQVdZcDAvc2RkZWZhdWx0LmpwZyIsCiAg
-        ICAgICJ3aWR0aCI6IDY0MCwKICAgICAgImhlaWdodCI6IDQ4MAogICAgIH0s
-        CiAgICAgIm1heHJlcyI6IHsKICAgICAgInVybCI6ICJodHRwczovL2kueXRp
-        bWcuY29tL3ZpL0VBdWVSaUFXWXAwL21heHJlc2RlZmF1bHQuanBnIiwKICAg
-        ICAgIndpZHRoIjogMTI4MCwKICAgICAgImhlaWdodCI6IDcyMAogICAgIH0K
-        ICAgIH0sCiAgICAiY2hhbm5lbFRpdGxlIjogIkZ1bGxzY3JlZW4iLAogICAg
-        ImNhdGVnb3J5SWQiOiAiMjciLAogICAgImxpdmVCcm9hZGNhc3RDb250ZW50
-        IjogIm5vbmUiCiAgIH0KICB9CiBdCn0K
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:29 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=2NW_AqhkYyQ&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:29 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:29 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/6q-wgQEs279DMqXcLedfFcNBai8"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '1984'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/6q-wgQEs279DMqXcLedfFcNBai8\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/W36n05zFJ3_kPw5N9udcP6oayOA\"",
-           "id": "2NW_AqhkYyQ",
-           "snippet": {
-            "publishedAt": "2014-05-14T19:36:54.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "Power To The Creators | Fullscreen",
-            "description": "Fullscreen is the first media company for the connected generation. We power the creation and sharing of video with the premiere, online creators and world's leading brands on a global scale. \n\nApply via http://full.sc/1k2enP5\n\nLed by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Los Angeles, California. \n\nFollow Fullscreen here:\n\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\nVine: http://full.sc/1un5kfT\nTumblr: http://full.sc/1un5UKE",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/2NW_AqhkYyQ/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/2NW_AqhkYyQ/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/2NW_AqhkYyQ/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/2NW_AqhkYyQ/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             },
-             "maxres": {
-              "url": "https://i.ytimg.com/vi/2NW_AqhkYyQ/maxresdefault.jpg",
-              "width": 1280,
-              "height": 720
-             }
-            },
-            "channelTitle": "Fullscreen",
-            "categoryId": "27",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:29 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=JhRmvEP4IJ8&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:30 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:30 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/q-cnWEQKvhvif45UZyCcz9vsgJE"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '3294'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/q-cnWEQKvhvif45UZyCcz9vsgJE\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/Y2SiovYNFxGKWEawoBlqzzPQsw8\"",
-           "id": "JhRmvEP4IJ8",
-           "snippet": {
-            "publishedAt": "2014-03-03T18:17:53.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "JackVale Scary PRANKS! | Colossal Collab",
-            "description": "FILL OUT THIS FORM WHEN YOU'RE READY TO SUBMIT: http://full.sc/NNFQXX\nCheck out and share the Fullscreen Colossal Collab playlist! - http://full.sc/1pVZjVu\nClick here to check out Jack Vale! - http://www.youtube.com/user/jackvalefilms\nAnd click here to watch the final video for Swiftor's Colossal Collab! - http://full.sc/NNGc0N\n\nDeadline is Sunday March 23rd!\n\nInstructions:\n\n1 - Record yourself performing your best scary prank on your family or friends. Keep it fun and safe!\n\n2 - Upload your \"Scary Prank\" Colossal Collab video to your channel and make it public for all of your subscribers to see. Make sure the title is relevant to the collab by using one of the following (you may add it after your real title):\n- Fullscreen Colossal Collab\n- JackVale Colossal Collab\n- JackVale Scary Prank Colossal Collab\n- Fullscreen Scary Prank Colossal Collab\n\n3 - Fill out this submission form: http://full.sc/NNFQXX\n\n4 - Add the Fullscreen Colossal Collab playlist to YOUR channel so you can be picked for the final Jack Vale Collab: http://full.sc/1pVZjVu\n\nIf you have any questions please leave them in the comments and we will respond! Thank you!\n\nGirl in the video: http://www.youtube.com/denisevlogs\nDude in the video is JackVale: http://www.youtube.com/user/jackvalefilms\n\nFollow Fullscreen here:\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\n\nFullscreen is a next-generation media and technology company innovating the future of video. As the largest YouTube network according to comScore, the Fullscreen network has over 2.5 billion monthly viewers, 150 million subscribers and over 15,000 channels. Fullscreen provides a suite of end-to-end YouTube tools and services to many of the world's leading brands and media companies. Led by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Culver City, California. \n\nJack Vale Scary Pranks | Colossal Collab",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/JhRmvEP4IJ8/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/JhRmvEP4IJ8/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/JhRmvEP4IJ8/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/JhRmvEP4IJ8/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             }
-            },
-            "channelTitle": "Fullscreen",
-            "categoryId": "23",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:29 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=cpIuWdz-8oc&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:30 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:30 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/1pr3HO1tWvOJSvG_ArhHKWGhE1s"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '3256'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/1pr3HO1tWvOJSvG_ArhHKWGhE1s\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/4LLQZcM-jyjYz1GUB9utYPXbUwo\"",
-           "id": "cpIuWdz-8oc",
-           "snippet": {
-            "publishedAt": "2014-02-01T22:00:01.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "Swiftor Gamer Faces | Colossal Collab",
-            "description": "FILL OUT THIS FORM WHEN YOU'RE READY TO SUBMIT: http://full.sc/1ftDK8Y\nCheck out and share the Fullscreen Colossal Collab playlist! - http://full.sc/1fp4YvT\nClick here to check out Swiftor! - http://www.youtube.com/swiftor\nAnd click here to watch the final video for Sam Tsui's Colossal Collab! - http://youtu.be/5e58n-IG2_Y\n\nDeadline is Sunday February 23rd! \n\nInstructions:\n\n1 - Record yourself playing your favorite game OR record your face mimicking what you WOULD look like while gaming. OR you could submit \"play-through\" footage with your funniest voice over moments. \n\n2 - Upload your \"Best Gamer Face\" Colossal Collab video to your channel and make it public for all of your subscribers to see.\n\n3 - Fill out this submission form: http://full.sc/1ftDK8Y\n\n4 - Add the Fullscreen Colossal Collab playlist to YOUR channel so you can be picked for the final Swiftor Collab: \n\nIf you have any questions please leave them in the comments and we will respond! Thank you!\n\nGirl in the video: http://www.youtube.com/denisevlogs\nDude in the bottom corner is Swiftor: http://www.youtube.com/swiftor\n\nFollow Fullscreen here:\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\n\nFullscreen is a next-generation media and technology company innovating the future of video. As the largest YouTube network according to comScore, the Fullscreen network has over 2.5 billion monthly viewers, 150 million subscribers and over 15,000 channels. Fullscreen provides a suite of end-to-end YouTube tools and services to many of the world's leading brands and media companies. Led by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Culver City, California. \n\nSwiftor Presents Best Gamer Faces | Colossal Collab",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/cpIuWdz-8oc/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/cpIuWdz-8oc/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/cpIuWdz-8oc/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/cpIuWdz-8oc/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             },
-             "maxres": {
-              "url": "https://i.ytimg.com/vi/cpIuWdz-8oc/maxresdefault.jpg",
-              "width": 1280,
-              "height": 720
-             }
-            },
-            "channelTitle": "Fullscreen",
-            "categoryId": "20",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:30 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=OgxnKHU668g&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:30 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:30 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/g5mZKMWVakd2AlJH55Cc4J5iqIc"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '3925'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/g5mZKMWVakd2AlJH55Cc4J5iqIc\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/YrnKhEGAYd7oLHCT4fp3gviRx04\"",
-           "id": "OgxnKHU668g",
-           "snippet": {
-            "publishedAt": "2014-01-01T19:02:51.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "Sam Tsui \"Make It Up\" | Colossal Collab",
-            "description": "Check out and share the Fullscreen Colossal Collab playlist! - http://full.sc/1a1k6Ah\nClick here to check out Sam Tsui! - http://www.youtube.com/samtsui\n\nSend the links to your Colossal Collab \"Sam Tsui - Make It Up\" videos by January 26th to this email: submissions@fullscreen.net\n\nInstructions:\n\n1 - Create a cover or do whatever it is that you do best to Sam Tsui's \"Make It Up\" in a video of your own.\n\nMusic Video: http://www.youtube.com/watch?v=rfeDEES5TEE\nSong Download Link: https://itunes.apple.com/us/album/make-it-up/id644755665\nLyrics: http://www.azlyrics.com/lyrics/samtsui/makeitup.html\n\n2 - Upload your \"Sam Tsui - Make It Up\" video to your channel and make it public for all of your subscribers to see.\n\n3 - Send the link to your \"Sam Tsui's - Make It Up\" video by January 26th to this email: submissions@fullscreen.net\n\n4 - Add the Fullscreen Colossal Collab playlist to YOUR channel so you can be picked for the final Sam Tsui Collab: http://full.sc/1a1k6Ah\n\nIMPORTANT - For all you singers out there, we need you to sing the song ACCAPELLA so we can use your voice in the final cut. Same goes for those of you that play instruments. You must PLAY YOUR INSTRUMENT SOLO so it can be edited properly into the video. If you want you may submit two videos. One where you have all the elements of music playing and it's public for your viewers to enjoy and then another that is unlisted of JUST your voice or instrument.\n\nMUSIC INFO:\n\n140 bpm\n\nChords:\nIntro:\nAb/C - Db - Eb - Fm (x4)\nVerse:\nAb/C - Db - Eb - Fm (x7)\nDb (all worked out)\nChorus - \nAb/C - Db - Eb - Fm (x8)\nBridge -\nGb \nAb - Bbm - Ab/C - Db - Eb - Fm\nGb\nAb/C - Db - Eb (x3)\nGb\n\nAnd that's all! If you have any questions please leave them in the comments and we will respond! Thank you!\n\nGirl in the video: http://www.youtube.com/denisevlogs\nDude in the video is Sam Tsui: http://www.youtube.com/samtsui\n\nFollow Fullscreen here:\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\n\nFullscreen is a next-generation media and technology company innovating the future of video. As the largest YouTube network according to comScore, the Fullscreen network has over 2.5 billion monthly viewers, 150 million subscribers and over 15,000 channels. Fullscreen provides a suite of end-to-end YouTube tools and services to many of the world's leading brands and media companies. Led by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Culver City, California. \n\nSam Tsui \"Make It Up\" | Colossal Collab",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/OgxnKHU668g/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/OgxnKHU668g/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/OgxnKHU668g/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/OgxnKHU668g/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             }
-            },
-            "channelTitle": "Fullscreen",
-            "categoryId": "10",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:30 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=CNIKQKvUGaA&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:30 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:30 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"U6mSzY-bIaKTDWs_KymTW7N6r5k/ybyU74NSif_dWjr74orKRcaLFtQ"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '1334'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"U6mSzY-bIaKTDWs_KymTW7N6r5k/ybyU74NSif_dWjr74orKRcaLFtQ\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"U6mSzY-bIaKTDWs_KymTW7N6r5k/pFZ3AUm3P2VKhraeXDm9RU-w5Dc\"",
-           "id": "CNIKQKvUGaA",
-           "snippet": {
-            "publishedAt": "2013-12-09T18:35:27.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "Fullscreen Spreadshirt Shops [LIVE SHOW]",
-            "description": "Come learn about Spreadshirt and how to set up your account via Sign In With Fullscreen. Go to the Creator Platform and sign in here: https://accounts.fullscreen.net/users/sign_in",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/CNIKQKvUGaA/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/CNIKQKvUGaA/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/CNIKQKvUGaA/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/CNIKQKvUGaA/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             }
-            },
-            "channelTitle": "Fullscreen",
-            "categoryId": "24",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:30 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=SCUh7Ajbcpk&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:31 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:31 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/9kru2m6poY2GvUP9CJqQAcRhifs"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '3306'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/9kru2m6poY2GvUP9CJqQAcRhifs\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/6sGhmL_5bg_FaCDqhntFXKU1Djc\"",
-           "id": "SCUh7Ajbcpk",
-           "snippet": {
-            "publishedAt": "2013-11-29T21:14:19.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "MisterEpicMann | Colossal Collab",
-            "description": "Check out and share the Fullscreen Colossal Collab playlist! - http://full.sc/IrzbjC\nClick here to check out MisterEpicMann! - http://www.youtube.com/misterepicmann\n\nSend the links to your Colossal Collab \"How Animals Open Christmas Presents\" videos by December 15th to this email: submissions@fullscreen.net\n\nInstructions:\n\n1 - Create a video showing us how YOU think animals open Christmas presents. Choose any animal you'd like! Check out the Fullscreen Colossal Collab playlist to get inspired: http://full.sc/IrzbjC\n\n2 - Upload your \"How Animals Open Christmas Presents\" video to your channel and make it public for all of your subscribers to see.\n\n3 - Send the link to your \"How Animals Open Christmas Presents\" video by December 15th to this email: submissions@fullscreen.net\n\n4 - Add the Fullscreen Colossal Collab playlist to YOUR channel so you can be picked for the MisterEpicMann collaboration video: http://full.sc/IrzbjC\n\nAnd that's all! If you have any questions please leave them in the comments and we will respond! Thank you!\n\nGirl in the video: http://www.youtube.com/denisevlogs\nHorsehead & Kitten: Paul Prado from http://www.youtube.com/5secondfilms\n\nFollow Fullscreen here:\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\n\nFullscreen is a next-generation media and technology company innovating the future of video. As the largest YouTube network according to comScore, the Fullscreen network has over 2.5 billion monthly viewers, 150 million subscribers and over 15,000 channels. Fullscreen provides a suite of end-to-end YouTube tools and services to many of the world's leading brands and media companies. Led by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Culver City, California. \n\nMisterEpicMann | Colossal Collab",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/SCUh7Ajbcpk/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/SCUh7Ajbcpk/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/SCUh7Ajbcpk/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/SCUh7Ajbcpk/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             },
-             "maxres": {
-              "url": "https://i.ytimg.com/vi/SCUh7Ajbcpk/maxresdefault.jpg",
-              "width": 1280,
-              "height": 720
-             }
-            },
-            "channelTitle": "Fullscreen",
-            "categoryId": "22",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:30 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=kCMDsh9cBjE&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:31 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:31 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/GcxIGbpkxj9BkAa6pfTlywH_9OI"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '2182'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/GcxIGbpkxj9BkAa6pfTlywH_9OI\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/Y2W2lhVsUnIc8XX0mjwoAdqTPBE\"",
-           "id": "kCMDsh9cBjE",
-           "snippet": {
-            "publishedAt": "2013-11-19T17:14:52.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "Sign In With Fullscreen",
-            "description": "Announcing Sign In with Fullscreen: our new service that gives you VIP access to a world of apps for video creators from all over the web. Learn more via our blog: http://full.sc/I34WQo\n\nFollow Fullscreen here:\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\n\nFullscreen is a next-generation media and technology company innovating the future of video. As the largest YouTube network according to comScore, the Fullscreen network has over 3 billion monthly viewers, 200 million subscribers and over 15,000 channels. Fullscreen provides a suite of end-to-end YouTube tools and services to many of the world's leading brands and media companies. Led by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Culver City, California. \n\nSign In With Fullscreen\nhttp://www.youtube.com/user/Fullscreen",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/kCMDsh9cBjE/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/kCMDsh9cBjE/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/kCMDsh9cBjE/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/kCMDsh9cBjE/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             }
-            },
-            "channelTitle": "Fullscreen",
-            "categoryId": "26",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:31 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=zKh04kpMONI&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sun, 21 Sep 2014 21:07:31 GMT
-      Date:
-      - Sun, 21 Sep 2014 21:07:31 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/MQWVnL78YCcPTDCc6oIOFjqbVEE"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '3190'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/MQWVnL78YCcPTDCc6oIOFjqbVEE\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/Py3h_XVYK5ofJdCzQWExgmsmg9M\"",
-           "id": "zKh04kpMONI",
-           "snippet": {
-            "publishedAt": "2013-11-13T20:39:13.000Z",
-            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
-            "title": "Turkey Stuffing | Colossal Collab",
-            "description": "Check out and share the Fullscreen Colossal Collab playlist! - http://full.sc/1aEXlgN\nClick to let twitter know you're making a video for Colossal Collab! - http://clicktotweet.com/UZ5Kr\n\nSend the links to your Colossal Collab Turkey Stuffing videos by November 26th to this email: submissions@fullscreen.net\n\nInstructions:\n\n1 - Create a video pronouncing \"Turkey Stuffing\" in your own unique way. Check out the Fullscreen Colossal Collab playlist to get inspired!\n\n2 - Upload your \"Turkey Stuffing\" video to your channel and make it public for all of your subscribers to see.\n\n3 - Send the link to your Turkey Stuffing video by November 26th to this email: submissions@fullscreen.net\n\n4 - Add the Fullscreen Colossal Collab playlist to YOUR channel so you can be picked for the PronunciationManual playlist: http://full.sc/1aEXlgN\n\nAnd that's all! If you have any questions please leave them in the comments and we will respond! Thank you!\n\nGirl in the video: http://www.youtube.com/denisevlogs\nDude that made the drawings: http://www.youtube.com/ogeeku\n\nFollow Fullscreen here:\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\n\nFullscreen is a next-generation media and technology company innovating the future of video. As the largest YouTube network according to comScore, the Fullscreen network has over 2.5 billion monthly viewers, 150 million subscribers and over 15,000 channels. Fullscreen provides a suite of end-to-end YouTube tools and services to many of the world's leading brands and media companies. Led by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Culver City, California. \n\nTurkey Stuffing | Colossal Collab",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/zKh04kpMONI/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/zKh04kpMONI/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/zKh04kpMONI/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/zKh04kpMONI/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             },
-             "maxres": {
-              "url": "https://i.ytimg.com/vi/zKh04kpMONI/maxresdefault.jpg",
-              "width": 1280,
-              "height": 720
-             }
-            },
-            "channelTitle": "Fullscreen",
-            "categoryId": "26",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Sun, 21 Sep 2014 21:07:31 GMT
+  recorded_at: Mon, 22 Sep 2014 20:02:17 GMT
 recorded_with: VCR 2.9.3
