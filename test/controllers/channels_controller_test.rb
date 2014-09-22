@@ -17,11 +17,13 @@ class ChannelsControllerTest < ActionController::TestCase
   end
 
   test 'should create channel' do
-    assert_difference('Channel.count') do
-      post :create, channel: { url: 'youtube.com/funforlouis' }
-    end
+    VCR.use_cassette 'channel_controller' do
+      assert_difference('Channel.count') do
+        post :create, channel: { url: 'youtube.com/funforlouis' }
+      end
 
-    assert_redirected_to channel_path(assigns(:channel))
+      assert_redirected_to channel_path(assigns(:channel))
+    end
   end
 
   test 'should show channel' do
@@ -35,8 +37,10 @@ class ChannelsControllerTest < ActionController::TestCase
   end
 
   test 'should update channel' do
-    patch :update, id: @channel, channel: { url: 'youtube.com/funforlouis' }
-    assert_redirected_to channel_path(assigns(:channel))
+    VCR.use_cassette 'channel_controller' do
+      patch :update, id: @channel, channel: { url: 'youtube.com/funforlouis' }
+      assert_redirected_to channel_path(assigns(:channel))
+    end
   end
 
   test 'should destroy channel' do

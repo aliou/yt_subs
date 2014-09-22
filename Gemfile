@@ -34,6 +34,11 @@ group :test, :development do
   gem 'dotenv-rails'
 end
 
+group :test do
+  gem 'webmock', '~> 1.9.3'
+  gem 'vcr', '~> 2.9.3'
+end
+
 group :development do
   gem 'pry-rails'
 

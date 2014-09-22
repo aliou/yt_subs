@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=aaaa&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 21 Sep 2014 21:11:50 GMT
+      Date:
+      - Sun, 21 Sep 2014 21:11:50 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/FoCsU7yzN8iy5FBrKm0m_B4IVLI"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '189'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/FoCsU7yzN8iy5FBrKm0m_B4IVLI\"",
+         "pageInfo": {
+          "totalResults": 0,
+          "resultsPerPage": 0
+         },
+         "items": []
+        }
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 21:11:50 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=aaaa&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 21 Sep 2014 21:11:50 GMT
+      Date:
+      - Sun, 21 Sep 2014 21:11:50 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/FoCsU7yzN8iy5FBrKm0m_B4IVLI"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '189'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/FoCsU7yzN8iy5FBrKm0m_B4IVLI\"",
+         "pageInfo": {
+          "totalResults": 0,
+          "resultsPerPage": 0
+         },
+         "items": []
+        }
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 21:11:50 GMT
+recorded_with: VCR 2.9.3

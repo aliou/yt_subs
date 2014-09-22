@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?forUsername=funforlouis&key=<API_KEY>&part=id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 21 Sep 2014 21:05:09 GMT
+      Date:
+      - Sun, 21 Sep 2014 21:05:09 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/Gp8S7M9bIjahjiAc4p6WFkxDaMo"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '341'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#channelListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/Gp8S7M9bIjahjiAc4p6WFkxDaMo\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 5
+         },
+         "items": [
+          {
+           "kind": "youtube#channel",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/-_sV7tuQBonFQXJNmrAt5_IW4L8\"",
+           "id": "UCVrvnobbNGGMsS5n2mJwfOg"
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 21:05:09 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?id=UCVrvnobbNGGMsS5n2mJwfOg&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 21 Sep 2014 21:05:09 GMT
+      Date:
+      - Sun, 21 Sep 2014 21:05:09 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/vBt0wJ5ZHnfkDwQzrcTWsphVOKY"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1013'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#channelListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/vBt0wJ5ZHnfkDwQzrcTWsphVOKY\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#channel",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/C2QGZiSl87sQ7eOBoNL-Rhj0864\"",
+           "id": "UCVrvnobbNGGMsS5n2mJwfOg",
+           "snippet": {
+            "title": "FunForLouis",
+            "description": "My name is Louis Cole. I make a Daily Vlog of my life! I enjoy travelling the world with friends, having fun and inspiring others!",
+            "publishedAt": "2011-11-07T04:19:59.000Z",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-wmWCuxokuSY/AAAAAAAAAAI/AAAAAAAAAAA/xuzLxJLwT5M/s88-c-k-no/photo.jpg"
+             },
+             "medium": {
+              "url": "https://yt3.ggpht.com/-wmWCuxokuSY/AAAAAAAAAAI/AAAAAAAAAAA/xuzLxJLwT5M/s240-c-k-no/photo.jpg"
+             },
+             "high": {
+              "url": "https://yt3.ggpht.com/-wmWCuxokuSY/AAAAAAAAAAI/AAAAAAAAAAA/xuzLxJLwT5M/s240-c-k-no/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 21:05:09 GMT
+recorded_with: VCR 2.9.3

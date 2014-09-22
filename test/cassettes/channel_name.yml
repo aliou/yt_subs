@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?forUsername=fullscreen&key=<API_KEY>&part=id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 21 Sep 2014 20:59:35 GMT
+      Date:
+      - Sun, 21 Sep 2014 20:59:35 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/0-deMJN8fij-FY_3fxliv4xp360"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '341'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#channelListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/0-deMJN8fij-FY_3fxliv4xp360\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 5
+         },
+         "items": [
+          {
+           "kind": "youtube#channel",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/O8y2n3KxHEIl-wf11MCEPQn0970\"",
+           "id": "UCxO1tY8h1AhOz0T4ENwmpow"
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 20:59:35 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?id=UCxO1tY8h1AhOz0T4ENwmpow&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 21 Sep 2014 20:59:35 GMT
+      Date:
+      - Sun, 21 Sep 2014 20:59:35 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/SxbZdH-aCaVbXen3SP8XLhKA6e0"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '935'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#channelListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/SxbZdH-aCaVbXen3SP8XLhKA6e0\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#channel",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/kZYFoxb-pKCg9XYVZQxidRTerj0\"",
+           "id": "UCxO1tY8h1AhOz0T4ENwmpow",
+           "snippet": {
+            "title": "Fullscreen",
+            "description": "The first media company for the connected generation.",
+            "publishedAt": "2006-03-23T06:13:25.000Z",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-KMnbKDBl60w/AAAAAAAAAAI/AAAAAAAAAAA/NjmFYOCVig4/s88-c-k-no/photo.jpg"
+             },
+             "medium": {
+              "url": "https://yt3.ggpht.com/-KMnbKDBl60w/AAAAAAAAAAI/AAAAAAAAAAA/NjmFYOCVig4/s240-c-k-no/photo.jpg"
+             },
+             "high": {
+              "url": "https://yt3.ggpht.com/-KMnbKDBl60w/AAAAAAAAAAI/AAAAAAAAAAA/NjmFYOCVig4/s240-c-k-no/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 20:59:35 GMT
+recorded_with: VCR 2.9.3

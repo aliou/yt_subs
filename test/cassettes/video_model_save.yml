@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=waa8JutImvY&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 21 Sep 2014 21:11:51 GMT
+      Date:
+      - Sun, 21 Sep 2014 21:11:51 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"kjEFmP90GvrCl8BObMQtGoRfgaQ/Ls9sljQbpS-gFsFyoUHG1CEPXvY"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2369'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/Ls9sljQbpS-gFsFyoUHG1CEPXvY\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/WVdD1KrYromom2viEHmpgHLvKsk\"",
+           "id": "waa8JutImvY",
+           "snippet": {
+            "publishedAt": "2013-07-18T20:05:52.000Z",
+            "channelId": "UCxO1tY8h1AhOz0T4ENwmpow",
+            "title": "How To Be Cool At Vidcon",
+            "description": "How To Be Cool At Vidcon\n\nWe're excited to see you all at Vidcon. Between our interactive booth and our exclusive showcase, Summer Upload, there will be plenty of opportunities for you guys to implement your \"cool skills\" at Vidcon. Learn more about our Vidcon activities here: http://full.sc/15q4LnB\n\nFollow Fullscreen here:\nWebsite: http://full.sc/nfC5Xp\nTwitter: http://full.sc/ZeABCP\nFacebook: http://full.sc/170rCps\nGoogle Plus: http://full.sc/UCcaj9\nInstagram: http://full.sc/ZeAIOL\n\nHost: Austin Null - http://www.youtube.com/user/thenivenulls\n\nFullscreen is a next-generation media and technology company innovating the future of video. As the largest YouTube network according to comScore, the Fullscreen network has over 2.5 billion monthly viewers, 150 million subscribers and over 15,000 channels. Fullscreen provides a suite of end-to-end YouTube tools and services to many of the world's leading brands and media companies. Led by an experienced team online thought-leaders, Fullscreen was founded in January 2011 by George Strompolos, a co-creator of the YouTube Partnership Program. Fullscreen is based in Culver City, California. \n\nHow To Be Cool At Vidcon\nhttp://www.youtube.com/user/Fullscreen",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/waa8JutImvY/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/waa8JutImvY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/waa8JutImvY/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/waa8JutImvY/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             }
+            },
+            "channelTitle": "Fullscreen",
+            "categoryId": "22",
+            "liveBroadcastContent": "none"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sun, 21 Sep 2014 21:11:50 GMT
+recorded_with: VCR 2.9.3
