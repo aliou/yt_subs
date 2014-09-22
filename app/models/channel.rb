@@ -8,6 +8,21 @@ class Channel < ActiveRecord::Base
 
   has_many :videos
 
+  # Public: Fetch the last videos since the last time.
+  #
+  # Returns the Videos fetched.
+  def fetch_videos
+    channel = Yt::Channel.new url: self.url
+    videos = channel.videos.where(
+       published_after: self.last_fetched.to_datetime.rfc3339,
+      published_before: DateTime.now.rfc3339
+    )
+
+    videos.map do |video|
+      self.videos.create yt_id: video.id
+    end
+  end
+
   private
 
   # Private: Fetches the channel title from the YouTube API.
