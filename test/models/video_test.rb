@@ -50,4 +50,13 @@ class VideoTest < ActiveSupport::TestCase
       assert_equal publication_date, video.date
     end
   end
+
+  test 'should fetch video thumbnail url' do
+    VCR.use_cassette 'video_model_thumbnail' do
+      channel = channels :fullscreen
+      video = channel.videos.create yt_id: 'MESycYJytkU'
+
+      assert_equal 'https://i.ytimg.com/vi/MESycYJytkU/hqdefault.jpg', video.thumbnail
+    end
+  end
 end
