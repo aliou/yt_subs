@@ -24,6 +24,7 @@ class Video < ActiveRecord::Base
         video = Yt::Video.new id: self.yt_id
         self.title = video.title
         self.date = video.published_at
+        self.thumbnail = video.thumbnail_url :high
       rescue
         self.title = nil
         errors.add(:yt_id, 'Must be a valid youtube video id')

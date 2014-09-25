@@ -28,7 +28,7 @@ class VideoTest < ActiveSupport::TestCase
       channel = channels :fullscreen
       video = channel.videos.create yt_id: 'waa8JutImvY'
 
-      assert video.save, video.errors.messages.to_s
+      assert video.save
     end
   end
 
