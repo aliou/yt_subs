@@ -20,6 +20,8 @@ gem 'unicorn'
 # CSS
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
+gem 'bourbon', '~> 3.2.3'
+gem 'neat', '~> 1.5.1'
 
 # JS
 gem 'coffee-rails', '~> 4.0.0'
