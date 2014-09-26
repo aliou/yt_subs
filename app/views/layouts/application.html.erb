@@ -16,16 +16,17 @@
   </head>
   <body>
     <div class='container'>
-      <div class='col-md-8 col-md-push-2'>
+      <div class='col-md-10 col-md-push-1'>
 
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-default">
+          <ul class="nav navbar-nav">
+            <li><a href="<%= channels_path %>"><span class="glyphicon glyphicon-th-list"></span></a></li>
+            <li><a href="<%= new_channel_path %>"><span class="glyphicon glyphicon-plus"></span></a></li>
+          </ul>
+
           <div class="navbar-header">
             <a class="navbar-brand" href="/">yt</a>
           </div>
-          <ul class="nav navbar-nav">
-            <li><a href="<%= channels_path %>">List Channels</a></li>
-            <li><a href="<%= new_channel_path %>">Add Channels</a></li>
-          </ul>
         </nav>
 
         <%= yield %>
