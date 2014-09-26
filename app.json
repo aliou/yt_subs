@@ -1,0 +1,10 @@
+{
+  "name": "yt",
+  "repository": "https://github.com/aliou/yt_subs",
+  "scripts": {
+    "postdeploy": "bundle exec rake db:schema:load"
+  },
+  "addons": [
+    "scheduler:standard"
+  ]
+}
