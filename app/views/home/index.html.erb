@@ -1,8 +1,9 @@
-<h2>Latest videos</h2>
-<ul class='list-group'>
-  <% @videos.each do |video| %>
-  <li class='list-group-item'>
-    <%= link_to video.title, video.url %>
-  </li>
-  <% end %>
-</ul>
+<% @videos.each do |group| %>
+  <div class="row">
+    <% group.each do |video| %>
+      <div class="col-md-4">
+        <%= link_to video.title, video.url %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
