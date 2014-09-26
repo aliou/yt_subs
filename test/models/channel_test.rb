@@ -25,10 +25,14 @@ class ChannelTest < ActiveSupport::TestCase
     assert channel.respond_to? :videos
   end
 
-  test 'should fetch last videos' do
+  test 'should fetch the videos in range' do
     VCR.use_cassette 'channel_model_fetch_videos' do
       channel = channels :caseyistat
-      videos = channel.fetch_videos
+      before = DateTime.parse 'August 1st 2014'
+      after = DateTime.parse 'September 1st 2014'
+
+
+      videos = channel.fetch_videos(before..after)
 
       assert videos.any?
     end

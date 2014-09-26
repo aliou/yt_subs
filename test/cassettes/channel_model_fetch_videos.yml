@@ -17,9 +17,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 25 Sep 2014 21:21:17 GMT
+      - Fri, 26 Sep 2014 05:26:58 GMT
       Date:
-      - Thu, 25 Sep 2014 21:21:17 GMT
+      - Fri, 26 Sep 2014 05:26:58 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -57,10 +57,10 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 25 Sep 2014 21:21:15 GMT
+  recorded_at: Fri, 26 Sep 2014 05:26:57 GMT
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCtinbF-Q-fVthA0qrFQTgXQ&key=<API_KEY>&maxResults=50&order=date&part=snippet&publishedAfter=2014-08-25T21:21:14%2B00:00&publishedBefore=2014-09-25T23:21:14%2B02:00&type=video
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCtinbF-Q-fVthA0qrFQTgXQ&key=<API_KEY>&maxResults=50&order=date&part=snippet&publishedAfter=2014-08-01T00:00:00%2B00:00&publishedBefore=2014-09-01T00:00:00%2B00:00&type=video
     body:
       encoding: US-ASCII
       string: ''
@@ -75,13 +75,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 25 Sep 2014 21:21:17 GMT
+      - Fri, 26 Sep 2014 05:26:58 GMT
       Date:
-      - Thu, 25 Sep 2014 21:21:17 GMT
+      - Fri, 26 Sep 2014 05:26:58 GMT
       Cache-Control:
       - private, max-age=120, must-revalidate, no-transform
       Etag:
-      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/Zbrcsis92RQOzexy0kjIPMfl_zQ"'
+      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/qi1Lifc3ylL2rpBVdIwI4dzbHJU"'
       Content-Type:
       - application/json; charset=UTF-8
       X-Content-Type-Options:
@@ -91,7 +91,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '2907'
+      - '3756'
       Server:
       - GSE
       Alternate-Protocol:
@@ -101,66 +101,12 @@ http_interactions:
       string: |
         {
          "kind": "youtube#searchListResponse",
-         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/Zbrcsis92RQOzexy0kjIPMfl_zQ\"",
+         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/qi1Lifc3ylL2rpBVdIwI4dzbHJU\"",
          "pageInfo": {
-          "totalResults": 4,
+          "totalResults": 6,
           "resultsPerPage": 50
          },
          "items": [
-          {
-           "kind": "youtube#searchResult",
-           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/SqICFUmyasm87FABROmU89kTsSs\"",
-           "id": {
-            "kind": "youtube#video",
-            "videoId": "Ef_BznBwktw"
-           },
-           "snippet": {
-            "publishedAt": "2014-09-20T12:18:08.000Z",
-            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
-            "title": "Black Market Takes Over the iPhone 6 Lines",
-            "description": "Some thoughts from me (the guy who made this movie). I am a big tech nerd. I slept on the streets to get the very first iPhone, when I was a teenager I would wait ...",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/default.jpg"
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/mqdefault.jpg"
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/hqdefault.jpg"
-             }
-            },
-            "channelTitle": "caseyneistat",
-            "liveBroadcastContent": "none"
-           }
-          },
-          {
-           "kind": "youtube#searchResult",
-           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/ZD0ZTJcNzftH5ZZTRouwEFWhWS8\"",
-           "id": {
-            "kind": "youtube#video",
-            "videoId": "iXCjwLnbH6Q"
-           },
-           "snippet": {
-            "publishedAt": "2014-09-12T13:07:35.000Z",
-            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
-            "title": "Super Fun Day With Karlie Kloss",
-            "description": "add me on snapchat - caseyneistat check out https://soundcloud.com/discoteeth on http://instagram.com/caseyneistat on https://www.facebook.com/cneistat on ht ...",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/default.jpg"
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/mqdefault.jpg"
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/hqdefault.jpg"
-             }
-            },
-            "channelTitle": "caseyneistat",
-            "liveBroadcastContent": "none"
-           }
-          },
           {
            "kind": "youtube#searchResult",
            "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/ROxCFBSc_Pxg0UTOqk2NObl4TEc\"",
@@ -187,189 +133,92 @@ http_interactions:
             "channelTitle": "caseyneistat",
             "liveBroadcastContent": "none"
            }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Thu, 25 Sep 2014 21:21:15 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=Ef_BznBwktw&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Thu, 25 Sep 2014 21:21:17 GMT
-      Date:
-      - Thu, 25 Sep 2014 21:21:17 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/KSBHVZefMQKjL8DqBg1HBjzxpi4"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '3373'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/KSBHVZefMQKjL8DqBg1HBjzxpi4\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
+          },
           {
-           "kind": "youtube#video",
-           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/TenOjW97zlmT5mT3rS6E9vA3WWE\"",
-           "id": "Ef_BznBwktw",
+           "kind": "youtube#searchResult",
+           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/yMlVJokhSsm6VdM95TsQcYpujJE\"",
+           "id": {
+            "kind": "youtube#video",
+            "videoId": "8xdBn_8AG84"
+           },
            "snippet": {
-            "publishedAt": "2014-09-20T12:18:08.000Z",
+            "publishedAt": "2014-08-25T11:44:34.000Z",
             "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
-            "title": "Black Market Takes Over the iPhone 6 Lines",
-            "description": "Some thoughts from me (the guy who made this movie).  I am a big tech nerd.  I slept on the streets to get the very first iPhone, when I was a teenager I would wait all night at the mall for a new video game.  For the 2013 launch of the iPhone 5s I made a short video about the lines in NYC, most of the video was of enthusiastic Apple fans, not unlike myself, eagerly waiting to get their hands on the new iPhone.  There was also a percentage of line sitters that lacked all enthusiasm, one in particular was asleep with her head inside of a garbage bag.  Those images bothered me, they were also the most talked about aspect of that 4 minute video.  For this year's iPhone 6 launch my intention was to cover that aspect of the story - sitters there for reasons other than their enthusiasm for the product.  \n\nI don't think Apple, the community or any of the people in line for any reason were doing anything wrong.  I attribute no fault for the bleak circumstances captured in this video.  If there is an opportunity for easy gains by reselling the phones then by all means do it.  I, also, cannot imagine Apple anticipated this or they would've better considered the roll out (they thought of everything else, including coffee for the people waiting outside).  \n\nThere should be better consideration of how to prevent a system that benefits those willing to sleep on the streets, near garbage, tolerating verbal abuse. \n\nI empathize with the ambitions of those willing to sit in line to earn.  Since making the video I have read a number of stories about the iPhone 6 selling for 3 or 4 times it's cost. \n\nRead more about the iPhone 6 Black Market in this Washington Post Article  - http://wapo.st/1uY2td5\n\nThis is another great article substantiating a lot of what's seen in this video -- http://appleinsider.com/articles/14/09/22/profiteers-flipping-iphone-6-units-to-chinese-reportedly-to-blame-for-fight-at-apple-store\n\n\nADD ME ON SNAPCHAT - caseyneistat \n\nPlease check out Aaron (our translator in the movie)\nhis twitter is @erinreiss\nyellowmountainmaps.com\nhe's a brilliant artist\n\nhttps://twitter.com/CaseyNeistat\nhttps://instagram.com/caseyneistat\nhttps://www.facebook.com/cneistat",
+            "title": "ALS Ice Bucket Challenge by Casey Neistat",
+            "description": "The ALS Ice Bucket Challenge was a triumph for all non-profit fund raising. The revenue generated from this super fun campaign is supported a great cause and.",
             "thumbnails": {
              "default": {
-              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/default.jpg",
-              "width": 120,
-              "height": 90
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/default.jpg"
              },
              "medium": {
-              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/mqdefault.jpg",
-              "width": 320,
-              "height": 180
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/mqdefault.jpg"
              },
              "high": {
-              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/Ef_BznBwktw/sddefault.jpg",
-              "width": 640,
-              "height": 480
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/hqdefault.jpg"
              }
             },
-            "channelTitle": "CaseyNeistat",
-            "categoryId": "19",
+            "channelTitle": "caseyneistat",
+            "liveBroadcastContent": "none"
+           }
+          },
+          {
+           "kind": "youtube#searchResult",
+           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/iGC21KgS_CsWknCXz9s4xcGd1z0\"",
+           "id": {
+            "kind": "youtube#video",
+            "videoId": "pBjOoVbCYlA"
+           },
+           "snippet": {
+            "publishedAt": "2014-08-18T21:15:06.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "Peace in Ferguson",
+            "description": "I spent August 14th, 2014 with the people of Ferguson. All I knew prior to arriving was an unarmed black teenager had been killed by a cop and violent alterc...",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/pBjOoVbCYlA/default.jpg"
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/pBjOoVbCYlA/mqdefault.jpg"
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/pBjOoVbCYlA/hqdefault.jpg"
+             }
+            },
+            "channelTitle": "caseyneistat",
+            "liveBroadcastContent": "none"
+           }
+          },
+          {
+           "kind": "youtube#searchResult",
+           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/Oa69U4B4Pd7cFAUv92-j74uGRSs\"",
+           "id": {
+            "kind": "youtube#video",
+            "videoId": "EqzRxi0ilto"
+           },
+           "snippet": {
+            "publishedAt": "2014-08-05T10:58:43.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "Casey Neistat Classics",
+            "description": "Please subscribe to my new CLASSICS channel - https://www.youtube.com/channel/UCGq0hRjayYChtQ0cWE1WiWA If you want to see Owen and the Magic ...",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/EqzRxi0ilto/default.jpg"
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/EqzRxi0ilto/mqdefault.jpg"
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/EqzRxi0ilto/hqdefault.jpg"
+             }
+            },
+            "channelTitle": "caseyneistat",
             "liveBroadcastContent": "none"
            }
           }
          ]
         }
     http_version: 
-  recorded_at: Thu, 25 Sep 2014 21:21:15 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=iXCjwLnbH6Q&key=<API_KEY>&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Length:
-      - '0'
-      User-Agent:
-      - Yt (gzip)
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Thu, 25 Sep 2014 21:21:18 GMT
-      Date:
-      - Thu, 25 Sep 2014 21:21:18 GMT
-      Cache-Control:
-      - private, max-age=300, must-revalidate, no-transform
-      Etag:
-      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/MHMlEMZmK1plTejGwjMBK6DAVzo"'
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '1344'
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=0.002
-    body:
-      encoding: UTF-8
-      string: |
-        {
-         "kind": "youtube#videoListResponse",
-         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/MHMlEMZmK1plTejGwjMBK6DAVzo\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 1
-         },
-         "items": [
-          {
-           "kind": "youtube#video",
-           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/KnWdhnaR95xcwCTyQ6YDohSbyfc\"",
-           "id": "iXCjwLnbH6Q",
-           "snippet": {
-            "publishedAt": "2014-09-12T13:07:35.000Z",
-            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
-            "title": "Super Fun Day With Karlie Kloss",
-            "description": "add me on snapchat - caseyneistat\n\ncheck out https://soundcloud.com/discoteeth \n\non http://instagram.com/caseyneistat\non https://www.facebook.com/cneistat\non https://twitter.com/CaseyNeistat",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             },
-             "standard": {
-              "url": "https://i.ytimg.com/vi/iXCjwLnbH6Q/sddefault.jpg",
-              "width": 640,
-              "height": 480
-             }
-            },
-            "channelTitle": "CaseyNeistat",
-            "categoryId": "19",
-            "liveBroadcastContent": "none"
-           }
-          }
-         ]
-        }
-    http_version: 
-  recorded_at: Thu, 25 Sep 2014 21:21:16 GMT
+  recorded_at: Fri, 26 Sep 2014 05:26:57 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=kfIc944bSJ8&key=<API_KEY>&part=snippet
@@ -387,13 +236,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 25 Sep 2014 21:21:18 GMT
+      - Fri, 26 Sep 2014 05:26:59 GMT
       Date:
-      - Thu, 25 Sep 2014 21:21:18 GMT
+      - Fri, 26 Sep 2014 05:26:59 GMT
       Cache-Control:
       - private, max-age=300, must-revalidate, no-transform
       Etag:
-      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/RKjSGgW8cZ2RG1VWrlwrxf3Ou7A"'
+      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/rKtrOEFNpZ8RB88Z0zJye0exXxk"'
       Content-Type:
       - application/json; charset=UTF-8
       X-Content-Type-Options:
@@ -413,7 +262,7 @@ http_interactions:
       string: |
         {
          "kind": "youtube#videoListResponse",
-         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/RKjSGgW8cZ2RG1VWrlwrxf3Ou7A\"",
+         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/rKtrOEFNpZ8RB88Z0zJye0exXxk\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 1
@@ -421,7 +270,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#video",
-           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/bLjc0l65gT7vfHAl4flHj8yZWjY\"",
+           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/2ViUBxIgofPrNEkbqW9epKH_jL8\"",
            "id": "kfIc944bSJ8",
            "snippet": {
             "publishedAt": "2014-08-28T17:14:51.000Z",
@@ -458,5 +307,287 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 25 Sep 2014 21:21:16 GMT
+  recorded_at: Fri, 26 Sep 2014 05:26:57 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=8xdBn_8AG84&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 26 Sep 2014 05:26:59 GMT
+      Date:
+      - Fri, 26 Sep 2014 05:26:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/suM1IFf2bZ29rhP1ZH2HQ3AlG4A"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2722'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/suM1IFf2bZ29rhP1ZH2HQ3AlG4A\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/Q2uixfOPDworNGMWw4h1CpccUoM\"",
+           "id": "8xdBn_8AG84",
+           "snippet": {
+            "publishedAt": "2014-08-25T11:44:34.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "ALS Ice Bucket Challenge by Casey Neistat",
+            "description": "The ALS Ice Bucket Challenge was a triumph for all non-profit fund raising.  The revenue generated from this super fun campaign is supported a great cause and I hope it pushes ALS research closer to finding a cure.\n\nSince I was already covered in ice water I thought why not take a minute to highlight a handful of other organizations doing great work.\n\nLeave Out Violence http://www.newyork.leaveoutviolence.org/ (LOVE) was created to reduce and help eliminate violence in the lives of youth and our communities by initiating a movement of youth spokespeople who communicate a message of non-violence.\n\nThe Endangered Species Coalition http://www.endangered.org/ works hard to protect our nation's disappearing wildlife.\n\nCharity:Water http://www.charitywater.org/ helps people in developing nations who lack access to clean water.\n\nThe ASPCA http://www.aspca.org/ works to prevent animal cruelty and finds homes for pets that need adoption.\n\nThe Coalition for the Homeless http://www.coalitionforthehomeless.org/ Helps people find affordable housing, sufficient food and the chance to work for a living wage.\n\nI am also a big supporter of Treat The Pain http://treatthepain.org/ an organization that provides pain medication to those who need it most, terminally ill people in developing nations with little access to medicine of any kind.\n\nThank you Braden for this great song -- http://www.bradendealmusic.com",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/8xdBn_8AG84/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "CaseyNeistat",
+            "categoryId": "19",
+            "liveBroadcastContent": "none"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 05:26:58 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=pBjOoVbCYlA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 26 Sep 2014 05:26:59 GMT
+      Date:
+      - Fri, 26 Sep 2014 05:26:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/RxrO1oDP8rb9QyX--b7BcnjbpsU"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2855'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/RxrO1oDP8rb9QyX--b7BcnjbpsU\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/lOHrTlHfhjOnoy1C8_h2NXHMRPQ\"",
+           "id": "pBjOoVbCYlA",
+           "snippet": {
+            "publishedAt": "2014-08-18T21:15:06.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "Peace in Ferguson",
+            "description": "I spent August 14th, 2014 with the people of Ferguson.  All I knew prior to arriving was an unarmed black teenager had been killed by a cop and violent altercations were taking place in streets.  What I found was a community fed up, with a deep seeded mistrust and sense of oppression by a nearly all white police force.  This community was upset and emotional about the killing of Michael Brown but they were peaceful, something they shared with the police was frustration towards the few individuals who were undermining their peaceful demonstrations.  These troublemakers were few.  Throughout the night of August 14th there were multiple occasions when these few got out of hand and every time, without exception, it was the people of Ferguson who kept them in check.  The demonstrators were clearly concerned with the way they'd been portrayed in the media.  Their message was being muddled by the violence initiated by a few.\n\nAs a stranger in a foreign environment I was made to feel welcome.  I was offered food and water and everyone was willing to speak to me about their experiences.\n\nIt is unfortunate that these demonstrations are marred by the violent acts of a small group.  It is not the will of the community to act out in this way, only the view of a group of outliers.  It is upsetting to see headlines, day after day, of riots and tear gas instead of the real issue at hand; an unarmed teenager was shot 6 times, twice in the head, by the very person assigned to protect him and the community he lives in.\n\nmusic by - Braden Deal http://www.bradendealmusic.com",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/pBjOoVbCYlA/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/pBjOoVbCYlA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/pBjOoVbCYlA/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/pBjOoVbCYlA/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/pBjOoVbCYlA/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "CaseyNeistat",
+            "categoryId": "19",
+            "liveBroadcastContent": "none"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 05:26:58 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=EqzRxi0ilto&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Yt (gzip)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 26 Sep 2014 05:26:59 GMT
+      Date:
+      - Fri, 26 Sep 2014 05:26:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"MmqJLb8ZBOWRQIsg7xej7lrKLMI/GUsPhg7j73d1PeaMTpAC6XzazfE"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1713'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.002
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/GUsPhg7j73d1PeaMTpAC6XzazfE\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"MmqJLb8ZBOWRQIsg7xej7lrKLMI/CSHF1SwJgNUJfUAHViILLWOfbqs\"",
+           "id": "EqzRxi0ilto",
+           "snippet": {
+            "publishedAt": "2014-08-05T10:58:43.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "Casey Neistat Classics",
+            "description": "Please subscribe to my new CLASSICS channel - https://www.youtube.com/channel/UCGq0hRjayYChtQ0cWE1WiWA\n\nIf you want to see Owen and the Magic Railroad go here -  https://www.youtube.com/watch?v=SVZduFFxH5Y&list=UUGq0hRjayYChtQ0cWE1WiWA\n\nadd me on Snapchat - Casey Neistat\non http://instagram.com/caseyneistat\non https://www.facebook.com/cneistat\non https://twitter.com/CaseyNeistat\n\nmusic by - https://soundcloud.com/taylorgalford",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/EqzRxi0ilto/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/EqzRxi0ilto/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/EqzRxi0ilto/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/EqzRxi0ilto/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/EqzRxi0ilto/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "CaseyNeistat",
+            "categoryId": "19",
+            "liveBroadcastContent": "none"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 05:26:58 GMT
 recorded_with: VCR 2.9.3
