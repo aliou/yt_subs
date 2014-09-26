@@ -8,14 +8,19 @@ class Channel < ActiveRecord::Base
 
   has_many :videos
 
-  # Public: Fetch the last videos since the last time.
+  # Public: Fetch the last videos in the provided range.
+  #
+  # range - The range to get views from. By default it will be from the last
+  #         fetched value to now.
   #
   # Returns the Videos fetched.
-  def fetch_videos
+  def fetch_videos(range = nil)
     channel = Yt::Channel.new url: self.url
+    range ||= self.last_fetched.to_datetime..DateTime.now
+
     videos = channel.videos.where(
-       published_after: self.last_fetched.to_datetime.rfc3339,
-      published_before: DateTime.now.rfc3339
+      published_after: range.first,
+      published_before: range.last
     )
 
     self.last_fetched = DateTime.now
