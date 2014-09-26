@@ -18,6 +18,8 @@ class Channel < ActiveRecord::Base
       published_before: DateTime.now.rfc3339
     )
 
+    self.last_fetched = DateTime.now
+
     videos.map do |video|
       self.videos.create yt_id: video.id
     end
