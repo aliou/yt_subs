@@ -1,9 +1,5 @@
-<% @videos.each do |group| %>
-  <div class="">
-    <% group.each do |video| %>
-      <div class="">
-        <%= link_to video.title, video.url %>
-      </div>
-    <% end %>
-  </div>
-<% end %>
+<div class="cards">
+  <% @videos.each do |video| %>
+      <%= render partial: 'card', locals: { video: video } %>
+  <% end %>
+</div>
