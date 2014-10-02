@@ -5,6 +5,7 @@
     "postdeploy": "bundle exec rake db:schema:load"
   },
   "addons": [
-    "scheduler:standard"
+    "scheduler:standard",
+    "heroku-postgresql"
   ]
 }
