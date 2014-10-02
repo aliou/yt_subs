@@ -1,0 +1,9 @@
+body {
+  @include outer-container;
+}
+
+.container {
+  @include span-columns(10);
+  @include shift(1);
+  @include pad();
+}
