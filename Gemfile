@@ -58,4 +58,3 @@ end
 gem 'yt', '~> 0.10.2'
 
 gem 'simple_form', '~> 3.0.2'
-
