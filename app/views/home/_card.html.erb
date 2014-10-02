@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-image">
+    <%= link_to video.url, target: '_blank' do %>
+      <img src="<%= video.thumbnail %>" alt="<%= video.title %>">
+    <% end %>
+  </div>
+
+  <div class="card-header">
+    <%= link_to video.title, video.url, target: '_blank' %>
+  </div>
+
+  <div class="card-copy">
+    <p><%= distance_of_time_in_words_to_now(video.date) %></p>
+  </div>
+</div>
