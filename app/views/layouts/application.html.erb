@@ -12,7 +12,9 @@
   <body>
     <%= render partial: 'shared/header_nav' %>
 
-    <%= yield %>
+    <div class='container'>
+      <%= yield %>
+    </div>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
