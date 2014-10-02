@@ -1,5 +1,5 @@
 {
-  "name": "yt",
+  "name": "yt_subs",
   "repository": "https://github.com/aliou/yt_subs",
   "scripts": {
     "postdeploy": "bundle exec rake db:schema:load"
