@@ -1,12 +1,6 @@
-<div class='col-md-12'>
-  <%= simple_form_for @channel do |f| %>
-    <%= f.error_notification %>
+<%= simple_form_for @channel do |f| %>
+  <%= f.error_notification %>
 
-    <%= f.input :url, label: false, wrapper: :horizontal_input_group do %>
-      <span class="input-group-addon glyphicon glyphicon-play"></span>
-      <%= f.input_field :url, placeholder: 'youtube.com/...', class: 'form-control' %>
-    <% end %>
-
-    <%= f.button :submit %>
-  <% end %>
-</div>
+  <%= f.input :url, label: false, placeholder: 'youtube.com/...' %>
+  <%= f.button :submit %>
+<% end %>

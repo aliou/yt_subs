@@ -1,9 +1,11 @@
-<h2><%= @channel.title %></h2>
+<div class='channel'>
+  <h2><%= @channel.title %></h2>
 
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<% @videos.each do |video| %>
-  <p><%= link_to video.title, video.url %></p>
-<% end %>
-
-<%= link_to 'Edit', edit_channel_path(@channel) %>
+  <div class='cards'>
+    <% @videos.each do |video| %>
+      <%= render partial: 'home/card', locals: { video: video } %>
+    <% end %>
+  </div>
+</div>

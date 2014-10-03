@@ -1,0 +1,25 @@
+// Place all the styles related to the channels controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+.channel {
+  $intro-text-width: 60%;
+
+  margin-bottom: 5em;
+  margin-top: 4em;
+  text-align: center;
+
+  h2 {
+    font-weight: 800;
+    margin-bottom: .3em;
+
+    @include media($large-screen) {
+      font-size: 3em;
+      margin-bottom: .4em;
+    }
+  }
+}
