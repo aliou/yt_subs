@@ -6,4 +6,7 @@ body {
   @include span-columns(10);
   @include shift(1);
   @include pad();
+
+  margin-bottom: 5em;
+  margin-top: 2em;
 }
