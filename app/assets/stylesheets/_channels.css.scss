@@ -23,3 +23,8 @@
     }
   }
 }
+
+.btn {
+  @include span-columns(4);
+  @include shift(4);
+}
