@@ -4,8 +4,31 @@
   "scripts": {
     "postdeploy": "bundle exec rake db:schema:load"
   },
-  "addons": [
-    "scheduler:standard",
-    "heroku-postgresql"
-  ]
+  "addons": [ "scheduler:standard", "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY_BASE": {
+      "description": "Secret key used to crypt passwords. This is generated.",
+      "generator": "secret"
+    },
+    "BOT_EMAIL": {
+      "description": "Your bot email address.",
+      "required": true
+    },
+    "BOT_PASSWD": {
+      "description": "Your bot email password.",
+      "required": true
+    },
+    "YT_API_KEY": {
+      "description": "Your YouTube API key.",
+      "required": true
+    },
+    "TWITTER_API_KEY": {
+      "description": "Your Twitter API key.",
+      "required": true
+    },
+    "TWITTER_API_SECRET": {
+      "description": "Your Twitter API secret.",
+      "required": true
+    }
+  }
 }
