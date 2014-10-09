@@ -4,4 +4,12 @@ Rails.application.routes.draw do
 
   # Get the Channel basic CRUD routes.
   resources :channels
+
+  # Omniauth callbacks.
+  get '/auth/:provider/callback', to: 'sessions#create'
+  get '/auth/failure',            to: 'sessions#failure'
+
+  # User actions.
+  get '/signin',                  to: 'sessions#new',     as: :signin
+  get '/signout',                 to: 'sessions#destroy', as: :signout
 end
