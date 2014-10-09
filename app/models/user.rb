@@ -1,8 +1,4 @@
 class User < ActiveRecord::Base
-  AUTHORIZED_USER = ENV['AUTHORIZED_USER']
-
-  attr_accessor :name, :email
-
   # Create a user from its omniauth authentification details.
   #
   # auth - The omniauth authentification details.
