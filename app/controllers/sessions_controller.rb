@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     if user.nil?
       user = User.create_with_omniauth(auth)
       session[:user_id] = user.id
-      # redirect_to user_edit_url(user)
+      redirect_to user_edit_url(user)
     else
       reset_session
       session[:user_id] = user.id

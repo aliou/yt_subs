@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   # User actions.
   get '/signin',                  to: 'sessions#new',     as: :signin
   get '/signout',                 to: 'sessions#destroy', as: :signout
+
+  get '/users/edit'
 end
