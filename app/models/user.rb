@@ -3,8 +3,6 @@ class User < ActiveRecord::Base
 
   attr_accessor :name, :email
 
-  validates :name, presence: true
-
   # Create a user from its omniauth authentification details.
   #
   # auth - The omniauth authentification details.
