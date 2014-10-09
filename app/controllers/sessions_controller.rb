@@ -17,15 +17,15 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_url, notice: 'You have been signed in.'
     end
+  end
 
-    def destroy
-      reset_session
-      redirect_to root_url, notice: 'You have been signed out.'
-    end
+  def destroy
+    reset_session
+    redirect_to root_url, notice: 'You have been signed out.'
+  end
 
-    def failure
-      redirect_to root_url,
-        notice: "An error occured: #{params[:message].humanize}."
-    end
+  def failure
+    redirect_to root_url,
+      notice: "An error occured: #{params[:message].humanize}."
   end
 end
