@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  # Set a custom homepage.
   root 'home#index'
 
-  # Get the Channel basic CRUD routes.
   resources :channels
+
+  resources :users, only: [:edit, :update]
 
   # Omniauth callbacks.
   get '/auth/:provider/callback', to: 'sessions#create'
@@ -12,6 +12,4 @@ Rails.application.routes.draw do
   # User actions.
   get '/signin',                  to: 'sessions#new',     as: :signin
   get '/signout',                 to: 'sessions#destroy', as: :signout
-
-  get '/users/edit'
 end
