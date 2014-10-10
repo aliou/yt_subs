@@ -24,6 +24,7 @@ class Channel < ActiveRecord::Base
     )
 
     self.last_fetched = DateTime.now
+    self.save
 
     videos.map do |video|
       self.videos.create yt_id: video.id
