@@ -50,10 +50,6 @@ group :test, :development do
   gem 'dotenv-rails'
 end
 
-group :development, :production do
-  gem 'rails_12factor'
-end
-
 group :test do
   gem 'webmock', '~> 1.9.3'
   gem 'vcr', '~> 2.9.3'
@@ -66,6 +62,10 @@ group :development do
 
   gem 'better_errors'
   gem 'binding_of_caller'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 ###############################################################################
