@@ -20,7 +20,11 @@ module Yt
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # Roadie configuration.
     ROADIE_I_KNOW_ABOUT_VERSION_3 = true # Remove after Roadie 3.1
     config.roadie.url_options = { host: 'yt.dev' }
+
+    # Enable Lograge for tamed logs.
+    config.lograge.enabled = true
   end
 end

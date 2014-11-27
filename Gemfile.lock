@@ -66,6 +66,10 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.1)
     kgio (2.9.2)
+    lograge (0.3.0)
+      actionpack (>= 3)
+      activesupport (>= 3)
+      railties (>= 3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -182,6 +186,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   dotenv-rails
   jquery-rails
+  lograge
   neat (~> 1.5.1)
   omniauth (~> 1.2.2)
   omniauth-twitter (~> 1.0.1)
