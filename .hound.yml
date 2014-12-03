@@ -1,4 +1,3 @@
-Style/StringLiterals:
-  EnforcedStyle: single_quotes
-Documentation:
-  Enabled: false
+ruby:
+  enabled: true
+  config_file: .rubocop.yml
