@@ -51,11 +51,15 @@ gem 'roadie-rails', '~> 1.0.3'
 
 group :test, :development do
   gem 'dotenv-rails'
+  gem 'byebug'
 end
 
 group :test do
   gem 'webmock', '~> 1.9.3'
   gem 'vcr', '~> 2.9.3'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do
